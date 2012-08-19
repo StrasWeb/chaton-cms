@@ -1,0 +1,41 @@
+#guestbook textarea {
+ width:100%;   
+}
+#guestbook label{
+    display:inline-block;
+ min-width:120px;   
+ text-align:right;
+ padding-right:1em;
+}
+#guestbook input{
+  margin-top:0.5em;   
+}
+#guestbook input[type=submit]{
+    display:block;
+ width:100px;
+ margin-left:0.5em;
+}
+
+#guestbook #human{
+ display:none;   
+}
+
+#guestbookPage .commentInfo{
+ text-align:right;   
+}
+
+#guestbookPage blockquote{
+ font-style:oblique; 
+ margin-bottom:0.3em;
+}
+
+#guestbookPage .comment{
+    padding-bottom:1em;
+    width:75%;
+    margin:auto;
+    margin-bottom:1em;
+}
+
+#guestbookPage #recaptcha_widget_div {
+	float:right;
+}

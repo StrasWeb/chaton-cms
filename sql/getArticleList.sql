@@ -1,0 +1,1 @@
+SELECT title, id, lang, date FROM %s ORDER BY date DESC;

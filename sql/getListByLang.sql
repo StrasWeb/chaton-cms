@@ -1,0 +1,1 @@
+SELECT title, id, lang FROM %s WHERE lang = :lang;

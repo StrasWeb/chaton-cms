@@ -1,0 +1,1 @@
+SELECT title, id, lang, pos FROM %s ORDER BY pos;

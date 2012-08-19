@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS `%s` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR( 50 ) , `ref` VARCHAR( 50 ) , `desc` varchar( 100 ),  `price` INT NOT NULL, `lang` VARCHAR( 2 ) NOT NULL DEFAULT 'en' , `num` INT NOT NULL DEFAULT '1', `type` VARCHAR( 50 )  DEFAULT NULL, `type2` VARCHAR( 50 )  DEFAULT NULL, PRIMARY KEY ( `id` ) ) DEFAULT CHARSET=utf8; 

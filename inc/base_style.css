@@ -1,0 +1,209 @@
+body {
+    font-family:sans-serif;
+}
+
+a{
+    background-color:white;
+}
+
+.wrapper {
+margin:auto;
+width:90%;
+}
+
+.mainheader,.menu,.footer,.main, .box {
+border:thin solid #CCC;
+padding:0.5em;
+}
+
+
+.main, .box {
+display:block;
+padding:0;
+margin-bottom:1em; 
+}
+
+.float{
+float:left;
+width:72%;
+}
+.box{
+float:right;
+clear:right;
+width:25%;
+}
+
+
+
+.mainheader {
+margin-bottom:1em;
+display:block;
+}
+
+.title {
+font-variant:small-caps;
+text-align:center;
+}
+
+.title img {
+border:0;
+}
+
+.footer {
+clear:both;
+font-size:x-small;
+text-align:center;
+display:block;
+}
+.menu_wrapper{
+margin-bottom:1em;   
+}
+.menu {
+padding:0;
+min-height:2.3em;
+display:block;
+font-size:0;
+}
+
+.menu ul {
+border-right:thin solid #DDD;
+display:inline-block;
+font-variant:small-caps;
+list-style-type:none;
+margin:0;
+padding:0;
+font-size:0;
+}
+
+
+.menu li {
+display:inline-block;
+height:100%;
+font-size: large;
+}
+
+
+.menu li a {
+display:inline-block;
+height:100%;
+text-decoration:none;
+padding:0.5em;
+}
+.menu div{
+display:inline-block;
+margin-left:0.5em;
+font-size:medium;
+}
+.menu .search {
+float:right;
+height:100%;
+padding:0.5em;
+}
+
+
+
+.main .date {
+float:right;
+font-size:small;
+}
+
+.main .news {
+border:thin solid #CCC;
+margin:1em 0.5em;
+display:block;
+}
+
+.main .news .header {
+border-bottom:thin solid #EEE;
+font-variant:small-caps;
+padding:0.3em 0.5em 0;
+}
+
+.text {
+padding:1em;
+}
+
+.main .page-title,
+.box_header {
+border-bottom:thin solid #DDD;
+font-variant:small-caps;
+margin:0;
+padding:0.3em;
+text-align:center;
+}
+
+
+.ok_search {
+margin-left:0.5em;
+}
+
+.search label {
+font-size:medium;
+}
+
+.search {
+border-left:thin solid #DDD;
+}
+
+.title a,.footer a,.main .news .header a {
+text-decoration:none;
+}
+
+.title a:hover,.footer a:hover,.main .news .header a:hover {
+text-decoration:underline;
+}
+
+.subtitle {
+margin:0;
+}
+
+
+.header{
+display:block;
+}
+
+.footer li{
+display:inline;
+list-style-type:none;	
+}
+
+.footer li:after{
+content:" | ";	
+}
+
+.footer li:last-child:after{
+content:"";
+}
+
+.clear{
+clear:both;
+}
+
+
+.menu .current{
+font-weight:bold;
+}
+
+a img{
+border:none;   
+}
+
+a img:hover{
+opacity:0.5;   
+}
+
+
+.modified,.error {
+border:thin dashed gray;
+margin-bottom:1em;
+padding:0.5em;
+text-align:center;
+}
+
+.modified {
+color:green;
+}
+
+.error {
+color:red;
+}

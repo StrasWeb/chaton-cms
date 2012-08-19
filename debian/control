@@ -1,0 +1,13 @@
+Source: chaton-cms
+Section: web
+Priority: extra
+Maintainer: Pierre Rudloff <rudloff@strasweb.fr>
+Standards-Version: 3.9.1
+Build-Depends: debhelper
+Homepage: http://cms.strasweb.fr/
+
+Package: chaton-cms
+Architecture: all
+Depends: apache2, php5, ${misc:Depends}
+Recommends: php-gettext
+Description: Chaton is a very simple and lightweight CMS build with PHP5. 

@@ -1,0 +1,14 @@
+admin /usr/share/chaton-cms
+classes /usr/share/chaton-cms
+inc /usr/share/chaton-cms
+js /usr/share/chaton-cms
+locale /usr/share/chaton-cms
+plugins /usr/share/chaton-cms
+sql /usr/share/chaton-cms
+themes /usr/share/chaton-cms
+index.php /usr/share/chaton-cms
+install.php /usr/share/chaton-cms
+rss.php /usr/share/chaton-cms
+search.php /usr/share/chaton-cms
+
+debian/apache.conf	etc/chaton-cms

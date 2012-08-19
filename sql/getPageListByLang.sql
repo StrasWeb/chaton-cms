@@ -1,0 +1,1 @@
+SELECT title, id, lang, pos FROM %s WHERE lang = :lang ORDER BY pos;

@@ -1,0 +1,173 @@
+body {
+    font-family: Verdana,sans-serif;
+    background-color: white;
+}
+
+.wrapper {
+    width: 80%;
+    padding-top: 80px;
+}
+
+.main {
+    clear: both;
+}
+
+.menu .search {
+    display: none;
+}
+
+.mainheader,
+.menu,
+.menu ul,
+.menu li,
+.search,
+.main,
+.text,
+.main .news,
+.main .news .header,
+.footer,
+.box {
+    border: none;
+    background: none;
+}
+
+.main .news-title {
+    display: none;
+}
+
+h2,
+.main .news .header a,
+.main .page-title,
+.box_header {
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: thin solid #e74f94;
+    text-align: left;
+    font-weight: lighter;
+    color: #00A4FF;
+}
+
+.main .news .header {
+    padding-top: 0;
+}
+
+.main .news .header a {
+    display: block;
+    width: 100%;
+    font-size: x-large;
+    color: #00A4FF;
+}
+
+.box_header:hover,
+.main .news .header a:hover {
+    border-bottom: thin solid #00A4FF;
+    text-decoration: none;
+}
+
+.box_header a:hover {
+    color: #00A4FF;
+}
+
+.main .page-title span {
+    display: block;
+}
+
+.main .page-title span:first-letter,
+.main .news a:first-letter,
+h2:first-letter {
+    font-size: xx-large;
+    color: #e74f94;
+}
+
+.main .news {
+    margin-top: 0;
+}
+
+.title {
+    clear: right;
+    height: 142px;
+    margin: 0;
+    text-align: left;
+}
+
+.title img {
+    max-height: 142px;
+}
+
+a {
+    text-decoration: none;
+    color: #00A4FF;
+}
+
+a:hover {
+    color: #e74f94;
+}
+
+a:focus {
+    outline: none;
+}
+
+.title a:hover {
+    text-decoration: none;
+    color: #e74f94;
+}
+
+.main .date {
+    display: none;
+}
+
+.box_header {
+    text-align: right;
+}
+
+.mainheader {
+    float: left;
+    margin-top: -80px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu li {
+    padding-left: 2em;
+    font-size: 16px;
+    font-variant: normal;
+}
+
+.menu li.current a,
+.menu li.current a:hover {
+    font-weight: normal;
+    color: #e74f94;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover {
+    color: #00A4FF;
+}
+
+.box ul {
+    list-style-type: square;
+}
+
+.footer a {
+    padding-top: 1em;
+    text-align: center;
+    font-size: small;
+    color: gray;
+}
+
+.footer li:after {
+    content: " - ";
+    color: gray;
+}
+
+ol li {
+    padding-bottom: 0.5em;
+}

@@ -1,0 +1,52 @@
+.image:hover{
+	opacity:1;
+}
+
+
+.shoplist .item{
+	display:inline-block;
+	min-width:300px;
+}
+
+#shopPage img{
+	max-width:100%;
+}
+
+.shoplist .main img{
+	display:block;
+}
+.shoplist h4,
+.shoplist .price{
+	display:inline-block;
+}
+.shoplist .price{
+	padding-left:1em;
+}
+
+.shoplist .desc{
+	display:block;
+}
+
+.shoplist .cart{
+	display:block;
+	float:right;
+	font-weight:bold;
+}
+
+table.cart{
+	width:100%;
+}
+table.cart th,
+table.cart td{
+	background-color:#EEE;
+}
+
+table.cart .right,
+table.cart td{
+	text-align:right;
+}
+
+table.cart td a{
+	text-decoration:none;
+}
+

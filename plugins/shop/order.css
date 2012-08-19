@@ -1,0 +1,50 @@
+
+
+.cart{
+	width:100%;
+}
+.cart th,
+.cart td{
+	border: thin solid #EEE;
+	color:black;
+}
+
+.cart .right,
+.cart td{
+	text-align:right;
+}
+
+.infoTable td{
+	text-align:left;
+}
+
+td, th{
+	padding:0.2em;
+}
+
+.cart td a{
+	text-decoration:none;
+}
+
+.cart .empty{
+	width:80%;
+	background-color:transparent;
+}
+@media print{
+noscript{
+	display:none;
+}
+}
+
+.infoTable th{
+	text-align:right;
+}
+
+h1, p, address{
+	text-align:center;
+}
+
+
+h1 img{
+	max-width:50%;
+}

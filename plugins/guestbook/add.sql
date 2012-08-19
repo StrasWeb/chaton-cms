@@ -1,0 +1,1 @@
+INSERT INTO %s (`comment`, `name`, `age`, `location`) VALUES (?, ?, ?, ?);

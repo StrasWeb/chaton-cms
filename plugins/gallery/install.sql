@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS `%s` ( `id` INT NOT NULL AUTO_INCREMENT , `id_gallery` INT NOT NULL , `name` VARCHAR( 50 ) , `desc` varchar( 50 ),  `type` VARCHAR( 25 ) NOT NULL, `lang` VARCHAR( 2 ) NOT NULL DEFAULT 'en', `num` INT NOT NULL DEFAULT '0', PRIMARY KEY ( `id` ) ) DEFAULT CHARSET=utf8; 
+CREATE TABLE IF NOT EXISTS `%s` ( `name` varchar(50) NOT NULL, `desc` text NOT NULL, `lang` VARCHAR( 2 ) NOT NULL DEFAULT 'en', `num` INT NOT NULL DEFAULT '0',  `id` int(11) NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`) ) DEFAULT CHARSET=utf8;

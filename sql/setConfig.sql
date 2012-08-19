@@ -1,0 +1,1 @@
+UPDATE %s SET `title` = ?, `desc` = ?, `logo` = ?, `lang` = ?, `homepage` = ?, `news_title` = ?;

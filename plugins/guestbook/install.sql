@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS %s ( `name` varchar(50) NOT NULL, `comment` text NOT NULL, `age` varchar(3) DEFAULT NULL, `location` varchar(75) DEFAULT NULL,  `id` int(11) NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`) ) DEFAULT CHARSET=utf8;

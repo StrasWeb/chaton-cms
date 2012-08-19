@@ -1,0 +1,75 @@
+/*Exemple de thème
+mobile.css doit être valide CSS1*/
+
+body {
+    margin: 0.1em;
+    font-family: sans-serif;
+    color: #222;
+    background-color: #CCC;
+}
+
+#main .news .header a,
+#menu span a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #005DA8;
+}
+
+#main .news .header a:active,
+#menu span a:active,
+a:active {
+    color: #000;
+}
+
+#mainwrapper {
+    margin: auto;
+    padding: 0.1em;
+    border: thin solid #C5C5C5;
+    background: #FFF;
+}
+
+#main {
+    border: none;
+}
+
+#page {
+    border: thin solid #C5C5C5;
+}
+
+#main .news {
+    margin: 0;
+    margin-bottom: 0.1em;
+}
+
+#main .news .header,
+#main .page-title {
+    clear: both;
+    margin: 0;
+    border-bottom: thin solid #005DA8;
+    text-align: center;
+    font-variant: small-caps;
+    color: #222;
+    background-color: #DDDDF5;
+}
+
+#main .news .header a {
+    color: #005DA8;
+}
+
+#main .text {
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
+    line-height: 1.2em;
+    color: #222;
+    background-color: #E5E5F5;
+}
+
+#menu {
+    margin-bottom: 0.1em;
+    padding: 0.1em;
+    border: thin solid #CCC;
+    color: #222;
+    background-color: #E5E5F5;
+}

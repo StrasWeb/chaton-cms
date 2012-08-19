@@ -1,0 +1,1 @@
+UPDATE %s SET `title` = ?, `content` = ?,  `lang` = ?,  `date` = ? WHERE `id` = ? AND  `lang` = ?;

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<skin version="1.2" name="Glow" author="LongTail Video">
+
+	<components>
+		<component name="controlbar">
+			<settings>
+			<setting name="margin" value="10" />
+
+			</settings>
+			
+			<layout>
+			<group position='center'>
+      <slider name='time' />
+
+   </group>
+
+				<group position="right">
+				<divider width="5" />
+				<slider name='volume' />
+	<button name="play" />
+					
+					<divider width="5" />
+					<button name="fullscreen" />
+				</group>
+			</layout>
+
+
+			
+			<elements>
+			<element name='playButton' src='Play off.png' />
+
+      <element name='playButtonOver' src='Play on.png' />
+      <element name='pauseButton' src='Pause off.png' />
+
+      <element name='pauseButtonOver' src='Pause on.png' />
+
+ <element name='fullscreenButton' src='Btn_pleinEcran.png' />
+
+      <element name='fullscreenButtonOver' src='BtnOver_pleinEcran.png' />
+      <element name='normalscreenButton' src='Btn_petitecran.png' />
+
+      <element name='normalscreenButtonOver' src='BtnOver_petitecran.png' />
+
+	     <element name='volumeSliderRail' src='volumeSliderRail.png' />
+
+      <element name='volumeSliderBuffer' src='volumeSliderBuffer.png' />
+      <element name='volumeSliderProgress' src='volumeSliderProgress.png' />
+		<element name='timeSliderRail' src='Slider3.png' />
+
+      <element name='timeSliderBuffer' src='Slider2.png' />
+      <element name='timeSliderProgress' src='Slider1.png' />
+
+
+			
+			</elements>
+
+		
+
+			
+		</component>
+		
+		<component name="display">
+		
+		<settings>
+		<setting name='backgroundcolor' value='0xFFFFFF' />
+</settings>
+
+			
+		</component>
+		
+		<component name="dock">
+			
+		</component>
+
+		<component name="playlist">
+
+		</component>
+
+		<component name="sharing">
+				</component>
+
+	</components>
+
+</skin>

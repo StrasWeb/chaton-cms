@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Brain Juice";
+    src: url("Brain Juice font.svg#font") format("svg");
+}
+
+.mainheader,
+.menu .search {
+    display: none;
+}
+
+.footer {
+    border: none;
+    background: none;
+}
+
+.news-title {
+    display: none;
+}
+
+body,
+.menu,
+.main,
+.main .news,
+.text,
+.main .news .header,
+.main .page-title {
+    border: none;
+    border-radius: 0;
+    background-color: white;
+}
+
+.menu,
+.box {
+    float: right;
+    width: 20%;
+    margin-top: 50px;
+    padding: 0 1px;
+}
+
+.menu ul,
+.menu li {
+    display: block;
+}
+
+.main {
+    float: left;
+    width: 75%;
+    min-width: 450px;
+}
+
+.main,
+.menu,
+.box {
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgb(255,255,255) ),color-stop(0.25,rgb(100,100,100) ),color-stop(0.75,rgb(100,100,100) ),color-stop(1,rgb(255,255,255) ));
+    background: -moz-linear-gradient(center top,rgb(255,255,255) 0,rgb(100,100,100) 100px,rgb(100,100,100) 75%,rgb(255,255,255) 100%);
+}
+
+.menu ul {
+    background-color: white;
+}
+
+.menu ul:first-child {
+    padding-top: 25px;
+}
+
+.menu ul li:last-child {
+    padding-bottom: 25px;
+}
+
+.main .news,
+.main article,
+.main .page {
+    margin: 0 1px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.main .news .header a:hover,
+.title a:hover,
+.footer a:hover,
+.menu li a:hover,
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+.subtitle {
+    padding-left: 5%;
+}
+
+.date {
+    padding-right: 2%;
+}
+
+.box_header,
+.box {
+    border: none;
+    background-color: white;
+}
+
+.box_header {
+    border-radius: 0;
+    font-size: large;
+}
+
+h2,
+h3,
+.menu li {
+    text-transform: uppercase;
+    font-family: "Brain Juice";
+}
+
+h2:first-letter,
+h3:first-letter,
+.menu li a:first-letter {
+    font-size: larger;
+}
+
+.menu li {
+    text-align: center;
+    font-size: small;
+}
+
+.pdf h1 {
+    display: none;
+}
+
+.pdf a {
+    color: black;
+}
+
+.pdf {
+    font-size: 11.5pt;
+}
+
+.pdf h2 {
+    margin: 0;
+    padding: 0.5em;
+    text-transform: none;
+}
+
+.title a,
+.footer a,
+.main .news .header a,
+.menu li a {
+    color: black;
+}

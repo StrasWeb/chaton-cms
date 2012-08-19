@@ -1,0 +1,1 @@
+UPDATE %s SET `name` = :name, `desc` = :desc, `num` = :num WHERE id = :id;

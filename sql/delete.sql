@@ -1,0 +1,1 @@
+DELETE FROM %s WHERE id = :id AND lang = :lang LIMIT 1;

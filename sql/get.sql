@@ -1,0 +1,1 @@
+SELECT * FROM %s WHERE lang = :lang AND id =:id LIMIT 1;

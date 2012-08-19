@@ -1,0 +1,1269 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Chaton CMS 0.2pre\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-14 16:56+0100\n"
+"PO-Revision-Date: 2011-07-14 16:56+0100\n"
+"Last-Translator: Pierre Rudloff <rudloff@strasweb.fr>\n"
+"Language-Team: StrasWeb <contact@strasweb.fr>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ./js\n"
+"X-Poedit-SearchPath-1: ./inc\n"
+"X-Poedit-SearchPath-2: ./admin\n"
+"X-Poedit-SearchPath-3: .\n"
+
+#: inc/news.php:15
+#: inc/header.php:16
+#: admin/news.php:3
+#: admin/index.php:44
+msgid "News"
+msgstr ""
+
+#: inc/footer.php:3
+msgid "Enable mobile version"
+msgstr ""
+
+#: inc/footer.php:4
+#: admin/index.php:31
+#: admin/index.php:40
+msgid "Administration"
+msgstr ""
+
+#: inc/footer.php:5
+msgid "Powered by"
+msgstr ""
+
+#: inc/localization.php:43
+msgid "Afar"
+msgstr ""
+
+#: inc/localization.php:44
+msgid "Abkhazian"
+msgstr ""
+
+#: inc/localization.php:45
+msgid "Avestan"
+msgstr ""
+
+#: inc/localization.php:46
+msgid "Afrikaans"
+msgstr ""
+
+#: inc/localization.php:47
+msgid "Akan"
+msgstr ""
+
+#: inc/localization.php:48
+msgid "Amharic"
+msgstr ""
+
+#: inc/localization.php:49
+msgid "Aragonese"
+msgstr ""
+
+#: inc/localization.php:50
+msgid "Arabic"
+msgstr ""
+
+#: inc/localization.php:51
+msgid "Assamese"
+msgstr ""
+
+#: inc/localization.php:52
+msgid "Avaric"
+msgstr ""
+
+#: inc/localization.php:53
+msgid "Aymara"
+msgstr ""
+
+#: inc/localization.php:54
+msgid "Azerbaijani"
+msgstr ""
+
+#: inc/localization.php:55
+msgid "Bashkir"
+msgstr ""
+
+#: inc/localization.php:56
+msgid "Belarusian"
+msgstr ""
+
+#: inc/localization.php:57
+msgid "Bulgarian"
+msgstr ""
+
+#: inc/localization.php:58
+msgid "Bihari"
+msgstr ""
+
+#: inc/localization.php:59
+msgid "Bislama"
+msgstr ""
+
+#: inc/localization.php:60
+msgid "Bambara"
+msgstr ""
+
+#: inc/localization.php:61
+msgid "Bengali"
+msgstr ""
+
+#: inc/localization.php:62
+msgid "Tibetan"
+msgstr ""
+
+#: inc/localization.php:63
+msgid "Breton"
+msgstr ""
+
+#: inc/localization.php:64
+msgid "Bosnian"
+msgstr ""
+
+#: inc/localization.php:65
+msgid "Catalan"
+msgstr ""
+
+#: inc/localization.php:66
+msgid "Chechen"
+msgstr ""
+
+#: inc/localization.php:67
+msgid "Chamorro"
+msgstr ""
+
+#: inc/localization.php:68
+msgid "Corsican"
+msgstr ""
+
+#: inc/localization.php:69
+msgid "Cree"
+msgstr ""
+
+#: inc/localization.php:70
+msgid "Czech"
+msgstr ""
+
+#: inc/localization.php:71
+msgid "Church Slavic"
+msgstr ""
+
+#: inc/localization.php:72
+msgid "Chuvash"
+msgstr ""
+
+#: inc/localization.php:73
+msgid "Welsh"
+msgstr ""
+
+#: inc/localization.php:74
+msgid "Danish"
+msgstr ""
+
+#: inc/localization.php:75
+msgid "German"
+msgstr ""
+
+#: inc/localization.php:76
+msgid "Divehi"
+msgstr ""
+
+#: inc/localization.php:77
+msgid "Dzongkha"
+msgstr ""
+
+#: inc/localization.php:78
+msgid "Ewe"
+msgstr ""
+
+#: inc/localization.php:79
+msgid "Greek"
+msgstr ""
+
+#: inc/localization.php:80
+msgid "English"
+msgstr ""
+
+#: inc/localization.php:81
+msgid "Esperanto"
+msgstr ""
+
+#: inc/localization.php:82
+msgid "Spanish"
+msgstr ""
+
+#: inc/localization.php:83
+msgid "Estonian"
+msgstr ""
+
+#: inc/localization.php:84
+msgid "Basque"
+msgstr ""
+
+#: inc/localization.php:85
+msgid "Persian"
+msgstr ""
+
+#: inc/localization.php:86
+msgid "Fulah"
+msgstr ""
+
+#: inc/localization.php:87
+msgid "Finnish"
+msgstr ""
+
+#: inc/localization.php:88
+msgid "Fijian"
+msgstr ""
+
+#: inc/localization.php:89
+msgid "Faroese"
+msgstr ""
+
+#: inc/localization.php:90
+msgid "French"
+msgstr ""
+
+#: inc/localization.php:91
+msgid "Western Frisian"
+msgstr ""
+
+#: inc/localization.php:92
+msgid "Irish"
+msgstr ""
+
+#: inc/localization.php:93
+msgid "Scottish Gaelic"
+msgstr ""
+
+#: inc/localization.php:94
+msgid "Galician"
+msgstr ""
+
+#: inc/localization.php:95
+msgid "Guarani"
+msgstr ""
+
+#: inc/localization.php:96
+msgid "Gujarati"
+msgstr ""
+
+#: inc/localization.php:97
+msgid "Manx"
+msgstr ""
+
+#: inc/localization.php:98
+msgid "Hausa"
+msgstr ""
+
+#: inc/localization.php:99
+msgid "Hebrew"
+msgstr ""
+
+#: inc/localization.php:100
+msgid "Hindi"
+msgstr ""
+
+#: inc/localization.php:101
+msgid "Hiri Motu"
+msgstr ""
+
+#: inc/localization.php:102
+msgid "Croatian"
+msgstr ""
+
+#: inc/localization.php:103
+msgid "Haitian"
+msgstr ""
+
+#: inc/localization.php:104
+msgid "Hungarian"
+msgstr ""
+
+#: inc/localization.php:105
+msgid "Armenian"
+msgstr ""
+
+#: inc/localization.php:106
+msgid "Herero"
+msgstr ""
+
+#: inc/localization.php:107
+msgid "Interlingua (International Auxiliary Language Association)"
+msgstr ""
+
+#: inc/localization.php:108
+msgid "Indonesian"
+msgstr ""
+
+#: inc/localization.php:109
+msgid "Interlingue"
+msgstr ""
+
+#: inc/localization.php:110
+msgid "Igbo"
+msgstr ""
+
+#: inc/localization.php:111
+msgid "Sichuan Yi"
+msgstr ""
+
+#: inc/localization.php:112
+msgid "Inupiaq"
+msgstr ""
+
+#: inc/localization.php:113
+msgid "Ido"
+msgstr ""
+
+#: inc/localization.php:114
+msgid "Icelandic"
+msgstr ""
+
+#: inc/localization.php:115
+msgid "Italian"
+msgstr ""
+
+#: inc/localization.php:116
+msgid "Inuktitut"
+msgstr ""
+
+#: inc/localization.php:117
+msgid "Japanese"
+msgstr ""
+
+#: inc/localization.php:118
+msgid "Javanese"
+msgstr ""
+
+#: inc/localization.php:119
+msgid "Georgian"
+msgstr ""
+
+#: inc/localization.php:120
+msgid "Kongo"
+msgstr ""
+
+#: inc/localization.php:121
+msgid "Kikuyu"
+msgstr ""
+
+#: inc/localization.php:122
+msgid "Kwanyama"
+msgstr ""
+
+#: inc/localization.php:123
+msgid "Kazakh"
+msgstr ""
+
+#: inc/localization.php:124
+msgid "Kalaallisut"
+msgstr ""
+
+#: inc/localization.php:125
+msgid "Khmer"
+msgstr ""
+
+#: inc/localization.php:126
+msgid "Kannada"
+msgstr ""
+
+#: inc/localization.php:127
+msgid "Korean"
+msgstr ""
+
+#: inc/localization.php:128
+msgid "Kanuri"
+msgstr ""
+
+#: inc/localization.php:129
+msgid "Kashmiri"
+msgstr ""
+
+#: inc/localization.php:130
+msgid "Kurdish"
+msgstr ""
+
+#: inc/localization.php:131
+msgid "Komi"
+msgstr ""
+
+#: inc/localization.php:132
+msgid "Cornish"
+msgstr ""
+
+#: inc/localization.php:133
+msgid "Kirghiz"
+msgstr ""
+
+#: inc/localization.php:134
+msgid "Latin"
+msgstr ""
+
+#: inc/localization.php:135
+msgid "Luxembourgish"
+msgstr ""
+
+#: inc/localization.php:136
+msgid "Ganda"
+msgstr ""
+
+#: inc/localization.php:137
+msgid "Limburgish"
+msgstr ""
+
+#: inc/localization.php:138
+msgid "Lingala"
+msgstr ""
+
+#: inc/localization.php:139
+msgid "Lao"
+msgstr ""
+
+#: inc/localization.php:140
+msgid "Lithuanian"
+msgstr ""
+
+#: inc/localization.php:141
+msgid "Luba-Katanga"
+msgstr ""
+
+#: inc/localization.php:142
+msgid "Latvian"
+msgstr ""
+
+#: inc/localization.php:143
+msgid "Malagasy"
+msgstr ""
+
+#: inc/localization.php:144
+msgid "Marshallese"
+msgstr ""
+
+#: inc/localization.php:145
+msgid "Maori"
+msgstr ""
+
+#: inc/localization.php:146
+msgid "Macedonian"
+msgstr ""
+
+#: inc/localization.php:147
+msgid "Malayalam"
+msgstr ""
+
+#: inc/localization.php:148
+msgid "Mongolian"
+msgstr ""
+
+#: inc/localization.php:149
+msgid "Marathi"
+msgstr ""
+
+#: inc/localization.php:150
+msgid "Malay"
+msgstr ""
+
+#: inc/localization.php:151
+msgid "Maltese"
+msgstr ""
+
+#: inc/localization.php:152
+msgid "Burmese"
+msgstr ""
+
+#: inc/localization.php:153
+msgid "Nauru"
+msgstr ""
+
+#: inc/localization.php:154
+msgid "Norwegian Bokmal"
+msgstr ""
+
+#: inc/localization.php:155
+msgid "North Ndebele"
+msgstr ""
+
+#: inc/localization.php:156
+msgid "Nepali"
+msgstr ""
+
+#: inc/localization.php:157
+msgid "Ndonga"
+msgstr ""
+
+#: inc/localization.php:158
+msgid "Dutch"
+msgstr ""
+
+#: inc/localization.php:159
+msgid "Norwegian Nynorsk"
+msgstr ""
+
+#: inc/localization.php:160
+msgid "Norwegian"
+msgstr ""
+
+#: inc/localization.php:161
+msgid "South Ndebele"
+msgstr ""
+
+#: inc/localization.php:162
+msgid "Navajo"
+msgstr ""
+
+#: inc/localization.php:163
+msgid "Chichewa"
+msgstr ""
+
+#: inc/localization.php:164
+msgid "Occitan"
+msgstr ""
+
+#: inc/localization.php:165
+msgid "Ojibwa"
+msgstr ""
+
+#: inc/localization.php:166
+msgid "Oromo"
+msgstr ""
+
+#: inc/localization.php:167
+msgid "Oriya"
+msgstr ""
+
+#: inc/localization.php:168
+msgid "Ossetian"
+msgstr ""
+
+#: inc/localization.php:169
+msgid "Panjabi"
+msgstr ""
+
+#: inc/localization.php:170
+msgid "Pali"
+msgstr ""
+
+#: inc/localization.php:171
+msgid "Polish"
+msgstr ""
+
+#: inc/localization.php:172
+msgid "Pashto"
+msgstr ""
+
+#: inc/localization.php:173
+msgid "Portuguese"
+msgstr ""
+
+#: inc/localization.php:174
+msgid "Quechua"
+msgstr ""
+
+#: inc/localization.php:175
+msgid "Raeto-Romance"
+msgstr ""
+
+#: inc/localization.php:176
+msgid "Kirundi"
+msgstr ""
+
+#: inc/localization.php:177
+msgid "Romanian"
+msgstr ""
+
+#: inc/localization.php:178
+msgid "Russian"
+msgstr ""
+
+#: inc/localization.php:179
+msgid "Kinyarwanda"
+msgstr ""
+
+#: inc/localization.php:180
+msgid "Sanskrit"
+msgstr ""
+
+#: inc/localization.php:181
+msgid "Sardinian"
+msgstr ""
+
+#: inc/localization.php:182
+msgid "Sindhi"
+msgstr ""
+
+#: inc/localization.php:183
+msgid "Northern Sami"
+msgstr ""
+
+#: inc/localization.php:184
+msgid "Sango"
+msgstr ""
+
+#: inc/localization.php:185
+msgid "Sinhala"
+msgstr ""
+
+#: inc/localization.php:186
+msgid "Slovak"
+msgstr ""
+
+#: inc/localization.php:187
+msgid "Slovenian"
+msgstr ""
+
+#: inc/localization.php:188
+msgid "Samoan"
+msgstr ""
+
+#: inc/localization.php:189
+msgid "Shona"
+msgstr ""
+
+#: inc/localization.php:190
+msgid "Somali"
+msgstr ""
+
+#: inc/localization.php:191
+msgid "Albanian"
+msgstr ""
+
+#: inc/localization.php:192
+msgid "Serbian"
+msgstr ""
+
+#: inc/localization.php:193
+msgid "Swati"
+msgstr ""
+
+#: inc/localization.php:194
+msgid "Southern Sotho"
+msgstr ""
+
+#: inc/localization.php:195
+msgid "Sundanese"
+msgstr ""
+
+#: inc/localization.php:196
+msgid "Swedish"
+msgstr ""
+
+#: inc/localization.php:197
+msgid "Swahili"
+msgstr ""
+
+#: inc/localization.php:198
+msgid "Tamil"
+msgstr ""
+
+#: inc/localization.php:199
+msgid "Telugu"
+msgstr ""
+
+#: inc/localization.php:200
+msgid "Tajik"
+msgstr ""
+
+#: inc/localization.php:201
+msgid "Thai"
+msgstr ""
+
+#: inc/localization.php:202
+msgid "Tigrinya"
+msgstr ""
+
+#: inc/localization.php:203
+msgid "Turkmen"
+msgstr ""
+
+#: inc/localization.php:204
+msgid "Tagalog"
+msgstr ""
+
+#: inc/localization.php:205
+msgid "Tswana"
+msgstr ""
+
+#: inc/localization.php:206
+msgid "Tonga"
+msgstr ""
+
+#: inc/localization.php:207
+msgid "Turkish"
+msgstr ""
+
+#: inc/localization.php:208
+msgid "Tsonga"
+msgstr ""
+
+#: inc/localization.php:209
+msgid "Tatar"
+msgstr ""
+
+#: inc/localization.php:210
+msgid "Twi"
+msgstr ""
+
+#: inc/localization.php:211
+msgid "Tahitian"
+msgstr ""
+
+#: inc/localization.php:212
+msgid "Uighur"
+msgstr ""
+
+#: inc/localization.php:213
+msgid "Ukrainian"
+msgstr ""
+
+#: inc/localization.php:214
+msgid "Urdu"
+msgstr ""
+
+#: inc/localization.php:215
+msgid "Uzbek"
+msgstr ""
+
+#: inc/localization.php:216
+msgid "Venda"
+msgstr ""
+
+#: inc/localization.php:217
+msgid "Vietnamese"
+msgstr ""
+
+#: inc/localization.php:218
+msgid "Volapuk"
+msgstr ""
+
+#: inc/localization.php:219
+msgid "Walloon"
+msgstr ""
+
+#: inc/localization.php:220
+msgid "Wolof"
+msgstr ""
+
+#: inc/localization.php:221
+msgid "Xhosa"
+msgstr ""
+
+#: inc/localization.php:222
+msgid "Yiddish"
+msgstr ""
+
+#: inc/localization.php:223
+msgid "Yoruba"
+msgstr ""
+
+#: inc/localization.php:224
+msgid "Zhuang"
+msgstr ""
+
+#: inc/localization.php:225
+msgid "Chinese"
+msgstr ""
+
+#: inc/localization.php:226
+msgid "Zulu"
+msgstr ""
+
+#: inc/header.php:5
+msgid "Home"
+msgstr ""
+
+#: inc/header.php:50
+#: inc/header.php:55
+msgid "OK"
+msgstr ""
+
+#: inc/header.php:53
+msgid "Search:"
+msgstr ""
+
+#: admin/news.php:5
+msgid "Article successfully deleted"
+msgstr ""
+
+#: admin/news.php:7
+msgid "Article succesfully added"
+msgstr ""
+
+#: admin/news.php:9
+msgid "Choose an article to edit:"
+msgstr ""
+
+#: admin/news.php:17
+#: admin/pages.php:36
+msgid "Translate"
+msgstr ""
+
+#: admin/news.php:29
+msgid "No article for the moment"
+msgstr ""
+
+#: admin/news.php:34
+msgid "Add an article"
+msgstr ""
+
+#: admin/pages.php:8
+#: admin/index.php:44
+msgid "Pages"
+msgstr ""
+
+#: admin/pages.php:10
+msgid "Page successfully deleted"
+msgstr ""
+
+#: admin/pages.php:12
+msgid "Page succesfully added"
+msgstr ""
+
+#: admin/pages.php:23
+#: admin/edit_page.php:44
+#: admin/lang.php:12
+#: admin/plugins.php:15
+#: admin/links.php:26
+#: admin/themes.php:7
+msgid "Modifications succesfully saved"
+msgstr ""
+
+#: admin/pages.php:27
+msgid "Choose a page to edit:"
+msgstr ""
+
+#: admin/pages.php:33
+#: admin/links.php:35
+msgid "Position:"
+msgstr ""
+
+#: admin/pages.php:47
+#: admin/links.php:41
+msgid "Save position"
+msgstr ""
+
+#: admin/pages.php:54
+msgid "No pages for the moment"
+msgstr ""
+
+#: admin/pages.php:58
+msgid "Add a page"
+msgstr ""
+
+#: admin/index.php:10
+#: admin/index.php:65
+msgid "Chaton CMS Admin"
+msgstr ""
+
+#: admin/index.php:42
+msgid "Return to website"
+msgstr ""
+
+#: admin/index.php:44
+msgid "Main"
+msgstr ""
+
+#: admin/index.php:44
+msgid "External Links"
+msgstr ""
+
+#: admin/index.php:44
+#: admin/themes.php:3
+msgid "Themes"
+msgstr ""
+
+#: admin/index.php:44
+#: admin/plugins.php:4
+msgid "Plugins"
+msgstr ""
+
+#: admin/index.php:49
+#: admin/lang.php:3
+msgid "Languages"
+msgstr ""
+
+#: admin/index.php:59
+msgid "Chaton is developped by"
+msgstr ""
+
+#: admin/edit_page.php:23
+msgid "Create a page"
+msgstr ""
+
+#: admin/edit_page.php:25
+msgid "Translate a page"
+msgstr ""
+
+#: admin/edit_page.php:28
+msgid "Edit a page"
+msgstr ""
+
+#: admin/edit_page.php:38
+msgid "Empty title!"
+msgstr ""
+
+#: admin/edit_page.php:40
+msgid "The page is empty!"
+msgstr ""
+
+#: admin/edit_page.php:61
+msgid "Title:"
+msgstr ""
+
+#: admin/edit_page.php:66
+msgid "Content:"
+msgstr ""
+
+#: admin/edit_page.php:83
+msgid "Language:"
+msgstr ""
+
+#: admin/edit_page.php:100
+#: admin/lang.php:26
+#: admin/plugins.php:48
+#: admin/themes.php:26
+msgid "Save"
+msgstr ""
+
+#: admin/edit_page.php:103
+msgid "Delete this page"
+msgstr ""
+
+#: admin/plugins.php:18
+msgid "Choose the plugins to enable:"
+msgstr ""
+
+#: admin/plugins.php:34
+msgid "Settings:"
+msgstr ""
+
+#: admin/plugins.php:40
+msgid "settings"
+msgstr ""
+
+#: admin/plugins.php:40
+msgid "Settings"
+msgstr ""
+
+#: admin/links.php:4
+msgid "External links"
+msgstr ""
+
+#: admin/links.php:12
+msgid "Link successfully deleted"
+msgstr ""
+
+#: admin/links.php:17
+msgid "Link successfully added"
+msgstr ""
+
+#: admin/links.php:38
+msgid "Delete"
+msgstr ""
+
+#: admin/links.php:45
+msgid "No links for the moment"
+msgstr ""
+
+#: admin/links.php:50
+msgid "Add a link"
+msgstr ""
+
+#: admin/themes.php:9
+msgid "Select the theme to use:"
+msgstr ""
+
+#: admin/themes.php:10
+msgid "none"
+msgstr ""
+
+#: admin/main.php:6
+msgid "You must enter a title"
+msgstr ""
+
+#: admin/main.php:16
+msgid "Website name:"
+msgstr ""
+
+#: admin/main.php:16
+msgid "Displayed in the header and title bar"
+msgstr ""
+
+#: admin/main.php:21
+msgid "Website description:"
+msgstr ""
+
+#: admin/main.php:21
+msgid "Displayed in search engines results"
+msgstr ""
+
+#: admin/main.php:26
+msgid "Logo (URL):"
+msgstr ""
+
+#: admin/main.php:26
+msgid "Adress of the image to use"
+msgstr ""
+
+#: admin/main.php:34
+msgid "Default language:"
+msgstr ""
+
+#: admin/main.php:34
+msgid "Used to display the interface."
+msgstr ""
+
+#: admin/edit_article.php:28
+msgid "Translate an article:"
+msgstr ""
+
+#: admin/edit_article.php:32
+msgid "Edit an article:"
+msgstr ""
+
+#: admin/edit_article.php:45
+msgid "The article is empty!"
+msgstr ""
+
+#: admin/edit_article.php:47
+msgid "Wrong date format!"
+msgstr ""
+
+#: admin/edit_article.php:79
+msgid "Date:"
+msgstr ""
+
+#: admin/edit_article.php:79
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: admin/edit_article.php:128
+msgid "Delete this article"
+msgstr ""
+
+#: admin/add_link.php:11
+msgid "Empty URL!"
+msgstr ""
+
+#: admin/add_link.php:25
+msgid "URL:"
+msgstr ""
+
+#: index.php:44
+msgid "Nothing to display for the moment."
+msgstr ""
+
+#: install.php:14
+msgid "Install"
+msgstr ""
+
+#: install.php:32
+msgid "Database config"
+msgstr ""
+
+#: install.php:33
+msgid "Host:"
+msgstr ""
+
+#: install.php:37
+msgid "Database:"
+msgstr ""
+
+#: install.php:41
+#: install.php:134
+msgid "Username:"
+msgstr ""
+
+#: install.php:45
+#: install.php:138
+msgid "Password:"
+msgstr ""
+
+#: install.php:50
+msgid "Next"
+msgstr ""
+
+#: install.php:60
+msgid "Error: This database already contains a Chaton install !"
+msgstr ""
+
+#: install.php:62
+msgid "Please empty it or choose another database."
+msgstr ""
+
+#: install.php:70
+#: install.php:97
+#: install.php:126
+msgid "Click here to try again"
+msgstr ""
+
+#: install.php:76
+msgid "Connection OK"
+msgstr ""
+
+#: install.php:84
+#: install.php:114
+#: install.php:152
+msgid "Click here to continue"
+msgstr ""
+
+#: install.php:87
+msgid "Error: Unable to connect to the database!"
+msgstr ""
+
+#: install.php:89
+#: install.php:118
+msgid "Please check your parameters."
+msgstr ""
+
+#: install.php:106
+msgid "Database structure successfully created"
+msgstr ""
+
+#: install.php:116
+msgid "Error: Unable to create the tables!"
+msgstr ""
+
+#: install.php:129
+msgid "Website config"
+msgstr ""
+
+#: install.php:143
+msgid "Enable multilingual mode (experimental)"
+msgstr ""
+
+#: install.php:158
+msgid "Installation successful"
+msgstr ""
+
+#: install.php:159
+msgid "You can now"
+msgstr ""
+
+#: install.php:159
+msgid "return to your website."
+msgstr ""
+
+#: install.php:164
+msgid "Chaton CMS is already installed."
+msgstr ""
+
+#: install.php:166
+msgid "You need to install Chaton CMS."
+msgstr ""
+
+#: install.php:170
+msgid "Click here to install"
+msgstr ""
+
+#: mobile.php:80
+msgid "Disable mobile version"
+msgstr ""
+
+#: plugins/flags/plugin.php:3
+msgid "Flags"
+msgstr ""
+
+#: plugins/PDF/hook.php:7
+#: plugins/PDF/plugin.php:3
+msgid "Export to PDF"
+msgstr ""
+
+#: plugins/transitions/plugin.php:3
+msgid "Transitions"
+msgstr ""
+
+#: plugins/rss_import/admin.php:5
+#: plugins/rss_import/plugin.php:3
+msgid "RSS Feed Import"
+msgstr ""
+
+#: plugins/rss_import/admin.php:12
+msgid "Incorrect URL!"
+msgstr ""
+
+#: plugins/rss_import/admin.php:21
+msgid "Feed URL:"
+msgstr ""
+
+#: plugins/rss_import/admin.php:21
+msgid "Adress of the RSS feed to display"
+msgstr ""
+
+#: plugins/rss_import/admin.php:26
+msgid "Number of articles to display:"
+msgstr ""
+
+#: plugins/rss_import/admin.php:38
+msgid "Display the feed"
+msgstr ""
+
+#: plugins/rss_import/admin.php:40
+msgid "in a block"
+msgstr ""
+
+#: plugins/rss_import/admin.php:44
+msgid "in the menu"
+msgstr ""
+
+#: plugins/guestbook/hook.php:4
+msgid "Guestbook"
+msgstr ""
+
+#: plugins/guestbook/page.php:10
+msgid "Comment sucessfully added"
+msgstr ""
+
+#: plugins/guestbook/page.php:21
+msgid "years old"
+msgstr ""
+
+#: plugins/guestbook/page.php:34
+msgid "Empty comment!"
+msgstr ""
+
+#: plugins/guestbook/page.php:36
+msgid "You must enter a name!"
+msgstr ""
+
+#: plugins/guestbook/page.php:38
+msgid "Age must be a number!"
+msgstr ""
+
+#: plugins/guestbook/page.php:46
+msgid "Add a comment:"
+msgstr ""
+
+#: plugins/guestbook/page.php:48
+msgid "Your text here"
+msgstr ""
+
+#: plugins/guestbook/page.php:49
+msgid "Your name:"
+msgstr ""
+
+#: plugins/guestbook/page.php:52
+msgid "Your age:"
+msgstr ""
+
+#: plugins/guestbook/page.php:55
+msgid "Your location:"
+msgstr ""
+
+#: plugins/guestbook/page.php:59
+msgid "Send"
+msgstr ""
+
+#: plugins/about_box/plugin.php:3
+msgid "About box"
+msgstr ""
+

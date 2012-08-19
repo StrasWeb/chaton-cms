@@ -1,0 +1,74 @@
+.mainheader,
+.menu .search {
+    display: none;
+}
+
+.footer {
+    border: none;
+    background: none;
+}
+
+.news-title {
+    display: none;
+}
+
+body,
+.menu,
+.main,
+.main .news,
+.text,
+.main .news .header,
+.main .page-title {
+    border: none;
+    background-color: white;
+}
+
+.menu,
+.box {
+    padding: 0 1px;
+}
+
+.menu ul,
+.menu li {
+    display: block;
+}
+
+.menu ul {
+    background-color: white;
+}
+
+.main .news,
+.main article,
+.main .page {
+    margin: 0 1px;
+    background-color: white;
+}
+
+.subtitle {
+    padding-left: 5%;
+}
+
+.date {
+    padding-right: 2%;
+}
+
+.box_header,
+.box {
+    border: none;
+}
+
+.box_header {
+    font-size: large;
+}
+
+h2,
+h3,
+.menu li {
+    text-transform: uppercase;
+    font-family: "Brain Juice";
+}
+
+.menu li {
+    text-align: center;
+    font-size: small;
+}

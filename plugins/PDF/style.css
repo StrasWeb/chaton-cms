@@ -1,0 +1,13 @@
+.toPDF{
+ float:right;
+ margin-left:0.5em;
+ border:none;
+  opacity:0.5;   
+}
+.toPDF:hover{
+ opacity:1;   
+}
+
+.main .page-title {
+	min-height:30px;
+}

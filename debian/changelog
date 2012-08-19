@@ -1,0 +1,11 @@
+chaton-cms (0.4pre) unstable; urgency=low
+
+  * 0.3 released
+
+ -- Pierre Rudloff <rudloff@strasweb.fr>  Sat, 18 Jan 2012 22:21:35 +0200
+
+chaton-cms (0.3-1) unstable; urgency=low
+
+  * Package now built daily
+
+ -- Pierre Rudloff <rudloff@strasweb.fr>  Sat, 20 Aug 2011 22:21:35 +0200
