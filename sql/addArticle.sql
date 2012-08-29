@@ -1,1 +1,1 @@
-INSERT INTO %s (`title`, `date`, `content`, `lang`) VALUES (?, ?, ?, ?);
+INSERT INTO %s (`title`, `date`, `content`, `lang`, `cat`) VALUES (?, ?, ?, ?, ?);

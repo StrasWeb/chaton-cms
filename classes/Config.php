@@ -96,6 +96,10 @@ class Config
                     $this->max = intval($this->perpage);
                 }
                 $this->current=round(($this->min/$this->perpage)+1);
+                if (isset($this->debug) && $this->debug) {
+                    include_once __DIR__."/dom-enhancer/Error.php";
+                    DOMenhancer_Error::$debug=true;
+                }
             }
             catch(PDOException$error) {
                 //Faudrait faire un peu de debug là

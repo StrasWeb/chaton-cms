@@ -285,7 +285,8 @@ if (isset($_POST['install'])) {
         $query =sprintf(
             $query, $config->prefix."links",  $config->prefix."main",
             $config->prefix."news", $config->prefix."pages",
-            $config->prefix."plugins",  $config->prefix."param"
+            $config->prefix."plugins",  $config->prefix."param",
+            $config->prefix."categories"
         ); 
         if ($query) {
             $query = $config->sql->prepare($query);

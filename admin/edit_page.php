@@ -52,7 +52,7 @@ if (isset($dom)) {
         $dom->html->body->div->div->addElement(
             "h2", _("Create a page"), array("class"=>"subtitle")
         );
-    } elseif (isset($_GET['translate'])) {
+    } elseif (isset($_GET["translate"])) {
             $dom->html->body->div->div->addElement(
                 "h2", _("Translate a page"), array("class"=>"subtitle")
             )->addElement("span", " - ");
@@ -139,21 +139,22 @@ if (isset($dom)) {
             $dom->html->body->div->div->form->textarea->content
         );
     }
+    
     $dom->html->body->div->div->form->addElement("br");
     $dom->html->body->div->div->form->addElement("br");
 
     
     if (isset($_GET['add'])) {
-            $dom->html->body->div->div->form->addElement(
-                "input", null, array(
-                    "type"=>"hidden", "name"=>"added", "value"=>true
-                )
-            );
-            $dom->html->body->div->div->form->addElement(
-                "input", null, array("type"=>"hidden", "name"=>"def_lang",
-                "value"=>$config->lang)
-            );
-
+        $dom->html->body->div->div->form->addElement(
+            "input", null, array(
+                "type"=>"hidden", "name"=>"added", "value"=>true
+            )
+        );
+        $dom->html->body->div->div->form->addElement(
+            "input", null, array("type"=>"hidden", "name"=>"def_lang",
+            "value"=>$config->lang)
+        );
+        
     } elseif (isset($_GET['translate'])) {
         $dom->html->body->div->div->form->addElement(
             "label", _("Language:")." ", array("for"=>"def_lang")

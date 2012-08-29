@@ -128,10 +128,16 @@ abstract class Item
             $query->bindValue(":min", $min, PDO::PARAM_INT);
             $query->bindValue(":max", $max, PDO::PARAM_INT);
             $query->execute();   
-            $result=$query->fetchAll(PDO::FETCH_OBJ);
-            return $result;
+            if ($result=$query->fetchAll(PDO::FETCH_OBJ)) {
+                return $result;
+            } else {
+                $error=$query->errorInfo();
+                trigger_error($error[2], E_USER_WARNING);
+                return false;
+            }
         } else {
-            return print_r($query->errorInfo());
+            print_r($query->errorInfo());
+            return false;
         }
     }
     
@@ -188,7 +194,8 @@ abstract class Item
         if ($result) {
             return true;
         } else {
-            print_r($query->errorInfo());
+            trigger_error($query->errorInfo(), E_USER_WARNING);
+            return false;
         }
     }
     

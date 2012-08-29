@@ -1,1 +1,1 @@
-UPDATE %s SET `title` = ?, `content` = ?,  `lang` = ?,  `date` = ? WHERE `id` = ? AND  `lang` = ?;
+UPDATE %s SET `title` = ?, `content` = ?,  `lang` = ?,  `date` = ?, `cat` = ? WHERE `id` = ? AND  `lang` = ?;

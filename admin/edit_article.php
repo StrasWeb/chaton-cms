@@ -44,6 +44,7 @@ if (isset($dom)) {
     $article->date=isset($_POST["news_date"])?$_POST["news_date"]:$article->date;
     $article->lang=isset($_POST["def_lang"])?$_POST["def_lang"]:$article->lang;
     $article->id=isset($_POST["id"])?$_POST["id"]:$article->id;
+    $article->cat=isset($_POST["cat"])?$_POST["cat"]:$article->cat;
     if (isset($_GET['add'])) {
         $dom->html->body->div->div->addElement(
             "h2", _("Add an article"), array("class"=>"subtitle")
@@ -163,6 +164,24 @@ if (isset($dom)) {
             $dom->html->body->div->div->form->textarea->content
         );
     }
+    
+    $dom->html->body->div->div->form->addElement("br");
+    
+    $dom->html->body->div->div->form->addElement("label", _("Category:"." "), array("for"=>"cat"));
+    $dom->html->body->div->div->form->addElement(
+        "select", null, array("id"=>"cat", "name"=>"cat")
+    );
+    require_once "classes/Category.php";
+    $cats=Category::getList();
+    foreach ($cats as $cat) {
+        $option=$dom->html->body->div->div->form->select->addElement(
+            "option", $cat->name, array("value"=>$cat->id)
+        );
+        if ($cat->id == $article->cat) {
+            $option->setAttribute("selected", "selected");
+        }
+    }
+    
     $dom->html->body->div->div->form->addElement("br");
     $dom->html->body->div->div->form->addElement("br");
     if (isset($_GET['add'])) {

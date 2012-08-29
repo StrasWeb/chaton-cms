@@ -1,6 +1,6 @@
 <?php
 /**
- * Document class
+ * Article class
  *
  * PHP Version 5.3.6
  * 
@@ -49,6 +49,7 @@ class Article extends Document
         } else {
             $this->date=date("Y-m-d");
             $this->lang=$lang;
+            $this->cat=null;
         }
     }
     
@@ -65,7 +66,7 @@ class Article extends Document
         $query = $config->sql->prepare($query);
         $param=array(
             $this->title, $this->content, $this->lang, $this->date,
-            $this->id, $this->lang
+            $this->cat, $this->id, $this->lang
         );
         $result=$query->execute($param);
         if ($result) {
@@ -99,7 +100,10 @@ class Article extends Document
             $query=file_get_contents("sql/addArticle.sql"); 
             $query =sprintf($query, $config->prefix.self::$table); 
             $query = $config->sql->prepare($query, array(PDO::PARAM_NULL));
-            $param=array($this->title, $this->date, $this->content, $this->lang);
+            $param=array(
+                $this->title, $this->date, $this->content, $this->lang,
+                $this->cat
+            );
 
         }     
             
@@ -133,11 +137,14 @@ class Article extends Document
      * @param string $id_lang Locale used
      * @param string $table   SQL table name (not used)
      * @param string $file    SQL file
+     * @param int    $min     First item to get
+     * @param int    $max     Last item to get
      * 
      * @return object
      * */
-    static function getAll($id_lang=null, $table=null, $file="getArticleAll")
-    {
+    static function getAll(
+        $id_lang=null, $table=null, $file="getArticleAll", $min=null, $max=null
+    ) {
         global $config;
         return parent::getAll($id_lang, $config->prefix.self::$table, $file);
     }

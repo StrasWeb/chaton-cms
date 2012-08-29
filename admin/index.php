@@ -125,7 +125,7 @@ if (is_file("../config.php")) {
             $dom->html->body->div->ul->addElement("li")
                 ->addElement("hr", null, array("class"=>"hidden"));
             $menu=array("main"=>_("Main"),
-            "news"=>_("News"), "pages"=>_("Pages"), "links"=>_("External Links"),
+            "news"=>_("News"), "categories"=>_("Categories"), "pages"=>_("Pages"), "links"=>_("External Links"),
             "themes"=>_("Themes"), "plugins"=>_("Plugins"));
             foreach ($menu as $item=>$name) {
                 $dom->html->body->div->ul->addElement("li")->addElement(
@@ -137,7 +137,7 @@ if (is_file("../config.php")) {
                     "a", _("Languages"), array("href"=>"index.php?tab=lang")
                 );
             }
-            $dom->html->body->div->addElement("div", null, array("class"=>"main"));
+            $maindiv=$dom->html->body->div->addElement("div", null, array("class"=>"main"));
             if (isset($_GET["tab"])) {
                 $tab=$_GET["tab"];
             } else {

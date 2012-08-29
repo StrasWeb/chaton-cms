@@ -9,3 +9,9 @@ CREATE TABLE IF NOT EXISTS `%s` (  `title` varchar(255) NOT NULL,  `content` lon
 CREATE TABLE IF NOT EXISTS `%s` (  `name` varchar(255) NOT NULL,  `enabled` tinyint(4) NOT NULL DEFAULT '0' ,  `installed` tinyint(4) NOT NULL DEFAULT '0')  DEFAULT CHARSET=utf8;
 			
 CREATE TABLE IF NOT EXISTS `%s` ( `param` varchar(100) NOT NULL, `value` longtext DEFAULT NULL, `lang` char(2) NOT NULL DEFAULT 'en' ) DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `%s` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8 ;

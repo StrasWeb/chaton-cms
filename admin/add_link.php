@@ -17,15 +17,6 @@ if (isset($dom)) {
     $link->url=isset($_POST["link_url"])?$_POST["link_url"]:$link->url;
 
     $dom->html->body->div->div->addElement(
-        "script", "", array(
-            "src"=>"tiny_mce/tiny_mce.js", "type"=>"text/javascript"
-        )
-    );
-    $dom->html->body->div->div->addElement(
-        "script", "", array("src"=>"tiny_mce.js", "type"=>"text/javascript")
-    );
-
-    $dom->html->body->div->div->addElement(
         "h2", _("Add a link"), array("class"=>"subtitle")
     );
 
