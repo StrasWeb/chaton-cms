@@ -28,7 +28,7 @@ if (!is_file("config.php")) {
     include "inc/head.php";
     $dom->html->body->addElement("div", null, array("id"=>"wrapper"));
     include "inc/header.php";
-    $dom->html->body->div->div->addElement(
+    $mainsection=$dom->html->body->div->div->addElement(
         "section", null, array(
             "id"=>"main", "class"=>"main", "data-role"=>"content"
         )

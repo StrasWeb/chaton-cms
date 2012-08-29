@@ -88,6 +88,14 @@ class Config
                         $this->languages=array();
                     }
                 }
+                if (isset($_GET["min"]) && $_GET["min"]>0) {
+                    $this->min = intval($_GET["min"]);
+                    $this->max = $this->min + $this->perpage; 
+                } else {
+                    $this->min = 0;
+                    $this->max = intval($this->perpage);
+                }
+                $this->current=round(($this->min/$this->perpage)+1);
             }
             catch(PDOException$error) {
                 //Faudrait faire un peu de debug là

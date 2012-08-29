@@ -106,6 +106,28 @@ if (isset($dom)) {
                         $dom->html->body->div->div->section->article->div->content
                     );
             }
+            $pagenum=$mainsection->addElement("div");
+            if ($config->min > 0) {
+                $pagenum->addElement(
+                    "a", "<", 
+                    array(
+                        "title"=>_("Previous page"),
+                        "href"=>"index.php?min=".($_GET["min"]-$config->perpage)
+                    )
+                );
+            }
+            $pagenum->addSpace();
+            $pagenum->addElement("b", $config->current);
+            $pagenum->addSpace();
+            if (Article::getNum() > $config->min+$config->perpage) {
+                $pagenum->addElement(
+                    "a", ">", 
+                    array(
+                        "title"=>_("Next page"),
+                        "href"=>"index.php?min=".($config->min+$config->perpage)
+                    )
+                );
+            }
         } else {
             $dom->html->body->div->div->section->addElement(
                 "div", _("No article for now")
