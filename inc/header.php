@@ -77,7 +77,7 @@ if (isset($dom)) {
         );
     }
     $navbar->addElement(
-        "ul", null, array("id"=>"newsMenu")
+        "ul", null, array("id"=>"newsMenu", "class"=>"newsMenu")
     )->addElement(
         "li", null, array("id"=>"newsMenuItem")
     )->addElement(

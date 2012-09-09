@@ -15,8 +15,8 @@ require_once "classes/Config.php";
 $config=new Config();
 require "inc/version.php";
 $dom=new DOMDocument("1.0", "utf-8");
-require_once "classes/DOMElement.php";
-$dom->registerNodeClass("DOMElement", "NewDOMElement");
+require_once "classes/dom-enhancer/DOMElement.php";
+$dom->registerNodeClass("DOMElement", "DOMenhancer_DOMElement");
 $dom->rss=$dom->createElement("rss");
 $dom->rss->setAttribute("xmlns:atom", "http://www.w3.org/2005/Atom");
 $dom->rss->setAttribute("xmlns:dc", "http://purl.org/dc/elements/1.1/");
@@ -40,26 +40,27 @@ $dom->rss->channel->addElement("generator", "Chaton CMS v".$config->chaton_ver);
 $dom->rss->channel->addElement("docs", "http://www.rssboard.org/rss-specification");
 $lang=isset($_GET["lang"])?$_GET["lang"]:$config->lang;
 require_once "classes/Article.php";
-$articles=Article::getAll($lang);
-foreach ($articles as $article) {
-    $dom->rss->channel->addElement("item")->addElement(
-        "title", stripslashes($article->title)
-    );
-    $dom->rss->channel->item->addElement("dc:language", $article->lang);
-    $dom->rss->channel->item->addElement(
-        "link", $fullpath."index.php?news=".$article->id
-    );
-    $dom->rss->channel->item->addElement(
-        "pubDate", date(DATE_RSS, strtotime($article->date))
-    );
-    $dom->rss->channel->item->addElement(
-        "guid", $fullpath."index.php?news=".$article->id,
-        array("isPermaLink"=>"true")
-    );
-    $dom->rss->channel->item->addElement(
-        "description", stripslashes($article->content)
-    );
-    
+if ($articles=Article::getAll($lang)) {
+    foreach ($articles as $article) {
+        $dom->rss->channel->addElement("item")->addElement(
+            "title", stripslashes($article->title)
+        );
+        $dom->rss->channel->item->addElement("dc:language", $article->lang);
+        $dom->rss->channel->item->addElement(
+            "link", $fullpath."index.php?news=".$article->id
+        );
+        $dom->rss->channel->item->addElement(
+            "pubDate", date(DATE_RSS, strtotime($article->date))
+        );
+        $dom->rss->channel->item->addElement(
+            "guid", $fullpath."index.php?news=".$article->id,
+            array("isPermaLink"=>"true")
+        );
+        $dom->rss->channel->item->addElement(
+            "description", stripslashes($article->content)
+        );
+        
+    }
 }
 
 

@@ -68,7 +68,7 @@ if (isset($dom)) {
             );
         }
         if (isset($plugin->admin) && $plugin->admin && $plugin->enabled) {
-            if (isset($config->multiling) && $config->multiling) {
+            if (isset($config->multilingual) && $config->multilingual) {
                 $dom->html->body->div->div->div->form->addElement(
                     "span", _("Settings:")." ",
                     array("class"=>"plugin_setting")

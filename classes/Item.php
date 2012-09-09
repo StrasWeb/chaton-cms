@@ -132,7 +132,9 @@ abstract class Item
                 return $result;
             } else {
                 $error=$query->errorInfo();
-                trigger_error($error[2], E_USER_WARNING);
+                if ($error[2]) {
+                    trigger_error($error[2], E_USER_WARNING);
+                }
                 return false;
             }
         } else {

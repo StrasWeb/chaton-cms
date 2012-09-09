@@ -11,9 +11,6 @@
  * @link     http://cms.strasweb.fr
  */
 define("ADMIN", true);
-$nonce = md5(
-    date("Y-m-d H:i", (ceil(time() / 300) * 300)).":".$_SERVER["REMOTE_ADDR"]
-);
 /**
  * HTTP Digest Authentication
  * 
@@ -36,6 +33,11 @@ if (is_file("../config.php")) {
     include_once "classes/Config.php";
     $config=new Config();
     include_once "inc/localization.php";
+    
+    $nonce = md5(
+        $_SERVER["REMOTE_ADDR"].":".$config->salt.":".
+        $_SERVER["HTTP_HOST"].":".date("zo")
+    );
 
     session_start();
     if (empty($_SERVER["PHP_AUTH_DIGEST"]) && !isset($_SESSION["login"])) {
@@ -125,7 +127,8 @@ if (is_file("../config.php")) {
             $dom->html->body->div->ul->addElement("li")
                 ->addElement("hr", null, array("class"=>"hidden"));
             $menu=array("main"=>_("Main"),
-            "news"=>_("News"), "categories"=>_("Categories"), "pages"=>_("Pages"), "links"=>_("External Links"),
+            "news"=>_("News"), "categories"=>_("Categories"),
+            "pages"=>_("Pages"), "links"=>_("External Links"),
             "themes"=>_("Themes"), "plugins"=>_("Plugins"));
             foreach ($menu as $item=>$name) {
                 $dom->html->body->div->ul->addElement("li")->addElement(
@@ -137,7 +140,9 @@ if (is_file("../config.php")) {
                     "a", _("Languages"), array("href"=>"index.php?tab=lang")
                 );
             }
-            $maindiv=$dom->html->body->div->addElement("div", null, array("class"=>"main"));
+            $maindiv=$dom->html->body->div->addElement(
+                "div", null, array("class"=>"main")
+            );
             if (isset($_GET["tab"])) {
                 $tab=$_GET["tab"];
             } else {

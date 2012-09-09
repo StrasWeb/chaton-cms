@@ -33,17 +33,7 @@ if (isset($dom)) {
             "name"=>"generator", "content"=>"Chaton CMS v".$config->chaton_ver
         )
     );
-    //Il faudrait tester s'il y a une extension qui l'utilise, inutile sinon
-    if (is_file("/usr/share/javascript/jquery/jquery.min.js")) {
-        //On utilise le paquet Debian si possible
-        $dom->html->head->addElement(
-            "script", null, array("src"=>"/javascript/jquery/jquery.min.js")
-        );
-    } else {
-        $dom->html->head->addElement(
-            "script", null, array("src"=>"js/jquery.js")
-        );
-    }
+    
 
     if ($config->theme) {
         $dom->html->head->addElement(
@@ -76,5 +66,17 @@ if (isset($dom)) {
         "[if lt IE 9]><script src='js/html5.js'></script><![endif]"
     );
     $dom->html->head->appendChild($dom->commentIE);
+    
+    //Il faudrait tester s'il y a une extension qui l'utilise, inutile sinon
+    if (is_file("/usr/share/javascript/jquery/jquery.min.js")) {
+        //On utilise le paquet Debian si possible
+        $dom->html->head->addElement(
+            "script", null, array("src"=>"/javascript/jquery/jquery.min.js")
+        );
+    } else {
+        $dom->html->head->addElement(
+            "script", null, array("src"=>"js/jquery.js")
+        );
+    }
 }
 ?>
