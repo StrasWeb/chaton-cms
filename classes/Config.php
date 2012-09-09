@@ -88,14 +88,16 @@ class Config
                         $this->languages=array();
                     }
                 }
-                if (isset($_GET["min"]) && $_GET["min"]>0) {
-                    $this->min = intval($_GET["min"]);
-                    $this->max = $this->min + $this->perpage; 
-                } else {
-                    $this->min = 0;
-                    $this->max = intval($this->perpage);
+                if (isset($this->perpage)) {
+                    if (isset($_GET["min"]) && $_GET["min"]>0) {
+                        $this->min = intval($_GET["min"]);
+                        $this->max = $this->min + $this->perpage; 
+                    } else {
+                        $this->min = 0;
+                        $this->max = intval($this->perpage);
+                    }
+                    $this->current=round(($this->min/$this->perpage)+1);
                 }
-                $this->current=round(($this->min/$this->perpage)+1);
                 if (isset($this->debug) && $this->debug) {
                     include_once __DIR__."/dom-enhancer/Error.php";
                     DOMenhancer_Error::$debug=true;
