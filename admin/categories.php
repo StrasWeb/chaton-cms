@@ -26,10 +26,13 @@ if (isset($dom)) {
     if (isset($_GET['add'])) {
         trigger_error(_("Link successfully added"), E_USER_NOTICE);
     }
-    $ul=$maindiv->addElement("ul");
-    $cats=Category::getAll();
-    foreach ($cats as $cat) {
-        $ul->addElement("li", $cat->name);
+    if ($cats=Category::getAll()) {
+        $ul=$maindiv->addElement("ul");
+        foreach ($cats as $cat) {
+            $ul->addElement("li", $cat->name);
+        }
+    } else {
+        $maindiv->addElement("p", _("No category yet"));
     }
 }
 ?>

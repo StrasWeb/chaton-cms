@@ -12,7 +12,9 @@
  */
 if (function_exists("bindtextdomain")) {
     if ((!isset($config->multilingual) || $config->multilingual) && !isset($admin)) {
-        if (isset($_GET["lang"])) {
+        if (defined("ADMIN")) {
+            $locale=$config->lang;
+        } else if (isset($_GET["lang"])) {
             $locale=$_GET["lang"];
         } else if (isset($_COOKIE["lang"])) {
             $locale=$_COOKIE["lang"];

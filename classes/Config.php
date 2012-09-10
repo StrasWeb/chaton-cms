@@ -75,7 +75,7 @@ class Config
                     }
                 }
                 if (isset($this->multilingual)&&$this->multilingual) {
-                    if (!isset($admin)) {
+                    if (!defined("ADMIN")) {
                         if (isset($_GET["lang"])) {
                             $this->lang=$_GET["lang"];
                             setcookie("lang", $this->lang);
