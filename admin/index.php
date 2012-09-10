@@ -28,6 +28,11 @@ function auth ()
     header("Refresh: 0; url=../index.php");
     exit;
 }
+
+if (!isset($_COOKIE["token"])) {
+    setcookie("token", md5(uniqid(rand(), true)));
+}
+
 if (is_file("../config.php")) {
     chdir("..");
     include_once "classes/Config.php";
@@ -66,9 +71,6 @@ if (is_file("../config.php")) {
             || (isset($_SESSION["login"]) && $_SESSION["login"])
         ) {
             include_once "classes/dom-enhancer/XMLDocument.php";
-            if (!isset($_COOKIE["token"])) {
-                setcookie("token", md5(uniqid(rand(), true)));
-            }
             $doc=new DOMenhancer_XMLDocument();
             $dom=$doc->DOM;            
             $dom->html->head->addElement("meta", null, array("charset"=>"UTF-8"));
