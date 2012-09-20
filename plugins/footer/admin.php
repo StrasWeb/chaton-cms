@@ -41,10 +41,13 @@ if (isset($dom)) {
             );
         }
     }
-    $dom->html->body->div->div->addElement(
+    $form = $dom->html->body->div->div->addElement(
         "form", null,
-        array("action"=>"index.php?tab=plugin&dir=".$plugin->dir."&lang=".$lang, "method"=>"post")
+        array("action"=>"index.php?tab=plugin&dir=".$plugin->dir, "method"=>"post")
     );
+    if (isset($_GET["lang"])) {
+        $form->setAttribute("action", $form->getAttribute("action")."&lang=".$lang);
+    }
     $dom->html->body->div->div->form->addElement(
         "input", null,
         array("type"=>"checkbox", "id"=>"default", "name"=>"default")
