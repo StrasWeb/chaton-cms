@@ -126,7 +126,7 @@ abstract class Item
                 $query->bindValue(":lang", $id_lang, PDO::PARAM_INT);
             }
             $query->bindValue(":min", $min, PDO::PARAM_INT);
-            $query->bindValue(":max", $max, PDO::PARAM_INT);
+            $query->bindValue(":max", $max-$min, PDO::PARAM_INT);
             $query->execute();   
             if ($result=$query->fetchAll(PDO::FETCH_OBJ)) {
                 return $result;
