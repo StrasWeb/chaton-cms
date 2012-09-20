@@ -112,7 +112,7 @@ if (isset($dom)) {
                     "a", "<", 
                     array(
                         "title"=>_("Previous page"),
-                        "href"=>"index.php?min=".($_GET["min"]-$config->perpage)
+                        "href"=>"index.php?min=".($_GET["min"]-$config->perpage)."&page=news"
                     )
                 );
             }
@@ -124,7 +124,7 @@ if (isset($dom)) {
                     "a", ">", 
                     array(
                         "title"=>_("Next page"),
-                        "href"=>"index.php?min=".($config->min+$config->perpage)
+                        "href"=>"index.php?min=".($config->min+$config->perpage)."&page=news"
                     )
                 );
             }
