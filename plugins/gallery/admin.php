@@ -57,7 +57,6 @@ if (isset($dom)) {
             }
             if (move_uploaded_file($_FILES["image"]["tmp_name"], getcwd().$dest)) {
                 trigger_error(_("Image successfully uploaded"), E_USER_NOTICE);
-                header("Refresh: 2;URL=index.php?tab=plugin&dir=".$_GET["dir"]);
             } else {
                 trigger_error(
                     _("Unable to copy the file. Please check folder permissions."),
@@ -234,6 +233,19 @@ if (isset($dom)) {
             }
         } else if (isset($_GET["gallery"])) {
             $images=GalleryImage::getImages($_GET["gallery"]);
+            $dom->html->body->div->div
+                ->addElement(
+                    "form", null,
+                    array("method"=>"POST",
+                    "action"=>"?tab=plugin&dir=".$_GET["dir"].
+                    "&gallery=".$_GET["gallery"],
+                    "enctype"=>"multipart/form-data")
+                )->addElement("input", null, array("type"=>"file", "name"=>"image"));
+            $dom->html->body->div->div->form
+                ->addElement(
+                    "input", null,
+                    array("type"=>"submit", "value"=>_("Upload an image"))
+                );
             if (!empty($images)) {
                 $dom->html->body->div->div->addElement(
                     "form", null,
@@ -322,19 +334,7 @@ if (isset($dom)) {
                     array("type"=>"submit", "value"=>_("Save order"))
                 );
             }
-            $dom->html->body->div->div
-                ->addElement(
-                    "form", null,
-                    array("method"=>"POST",
-                    "action"=>"?tab=plugin&dir=".$_GET["dir"].
-                    "&gallery=".$_GET["gallery"],
-                    "enctype"=>"multipart/form-data")
-                )->addElement("input", null, array("type"=>"file", "name"=>"image"));
-            $dom->html->body->div->div->form
-                ->addElement(
-                    "input", null,
-                    array("type"=>"submit", "value"=>_("Upload an image"))
-                );
+            
         } else if (isset($_GET["add"])) {
             $dom->html->body->div->div->addElement("form")
                 ->addElement("label", _("Name:")." ", array("for"=>"name"));

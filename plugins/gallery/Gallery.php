@@ -35,11 +35,14 @@ if (isset($dom)) {
          * @param string $id_lang Language
          * @param string $table   SQL table
          * @param string $file    SQL file
+         * @param int    $min     First gallery to get
+         * @param int    $max     Last gallery to get
          * 
          * @return object
          * */
-        static function getAll($id_lang=null, $table=null, $file="getAll", $min=null, $max=null)
-        {
+        static function getAll(
+            $id_lang=null, $table=null, $file="getAll", $min=null, $max=null
+        ) {
             global $config;
             $dir=isset($_GET["dir"])?$_GET["dir"]:$_GET["plugin"];
             $query=file_get_contents("plugins/".$dir."/getGalleryList.sql");  
