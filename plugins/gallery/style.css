@@ -1,19 +1,19 @@
 .cover:hover{
-	opacity:1;
+    opacity:1;
 }
 
 .gallery{
-	display:inline-block;
-	min-width:300px;
+    display:inline-block;
+    min-width:300px;
 }
 
 #galleryPage img{
-	max-width:100%;
+    max-width:100%;
 }
 
 .links .current{
-	font-weight:bold;
+    font-weight:bold;
 }
 #galleryPage img:hover{
-	opacity:1;
+    opacity:1;
 }
