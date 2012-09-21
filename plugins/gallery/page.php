@@ -158,20 +158,22 @@ if (isset($this)) {
         $this->galleries=Gallery::getAll();
         if (count($this->galleries)>1) {
             foreach ($this->galleries as $gallery) {
-                $dom->html->body->div->div->section->div
+                $gal=$dom->html->body->div->div->section->div
                     ->addElement("div", null, array("class"=>"gallery"))
                     ->addElement(
                         "a", null, array(
                             "href"=>"?plugin=".$this->dir."&gallery=".$gallery->id
                         )
-                    )
-                    ->addElement(
+                    );
+                $coverURL="plugins/".$this->dir."/covers/".$gallery->id.".jpeg";
+                if (is_file($coverURL)) {
+                    $gal->addElement(
                         "img", null, array(
-                            "src"=>"plugins/".$this->dir."/covers/".
-                            $gallery->id.".jpeg",
+                            "src"=>$coverURL,
                             "class"=>"cover", "id"=>$gallery->id
                         )
                     );
+                }
                 $dom->html->body->div->div->section->div->div->a
                     ->addElement("h4", $gallery->name);
                 $dom->html->body->div->div->section->div->div
