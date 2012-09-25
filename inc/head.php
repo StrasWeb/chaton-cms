@@ -80,5 +80,14 @@ if (isset($dom)) {
             );
         }
     }
+    
+    if (file_exists("favicon.ico")) {
+        $dom->html->head->addElement(
+            "link", null, array(
+                "rel"=>"icon",
+                "href"=>"favicon.ico",
+            )
+        );
+    }
 }
 ?>
