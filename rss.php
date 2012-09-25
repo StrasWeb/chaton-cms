@@ -47,13 +47,13 @@ if ($articles=Article::getAll($lang)) {
         );
         $dom->rss->channel->item->addElement("dc:language", $article->lang);
         $dom->rss->channel->item->addElement(
-            "link", $fullpath."index.php?page=news&news=".$article->id
+            "link", $fullpath."index.php?page=news&amp;news=".$article->id
         );
         $dom->rss->channel->item->addElement(
             "pubDate", date(DATE_RSS, strtotime($article->date))
         );
         $dom->rss->channel->item->addElement(
-            "guid", $fullpath."index.php?page=news&news=".$article->id,
+            "guid", $fullpath."index.php?page=news&amp;news=".$article->id,
             array("isPermaLink"=>"true")
         );
         $dom->rss->channel->item->addElement(
