@@ -72,6 +72,7 @@ if (isset($dom)) {
         || isset($_POST['added'])
         || isset($_POST['translated'])
     ) {
+        $page->show=isset($_POST["show"]);
         if (!$_POST['page_title']) {
                 $dom->html->body->div->div->addElement(
                     "div", _("Empty title!"), array("class"=>"error")
@@ -189,6 +190,20 @@ if (isset($dom)) {
             )
         );
     }
+    
+    $dom->html->body->div->div->form->addElement(
+        "input", null, array("type"=>"checkbox", "id"=>"show", "name"=>"show")
+    );
+    if ($page->show) {
+        $dom->html->body->div->div->form->input
+            ->setAttribute("checked", "checked");
+    }
+    $dom->html->body->div->div->form->addElement(
+        "label", _("Show page in menu"), array("for"=>"show")
+    );
+    
+    $dom->html->body->div->div->form->addElement("br");
+    $dom->html->body->div->div->form->addElement("br");
     
     $dom->html->body->div->div->form->addElement(
         "input", null, array(

@@ -97,7 +97,7 @@ class Page extends Document
             $query = $config->sql->prepare($query, array(PDO::PARAM_NULL));
             $param=array(
                 $this->title, $this->pos, $this->content,
-                $this->lang, $this->id
+                $this->lang, $this->id, $this->show
             );
         } else {
             $query=file_get_contents("sql/addPage.sql");  
@@ -130,8 +130,8 @@ class Page extends Document
         );      
         $query = $config->sql->prepare($query);
         $param=array(
-            $this->title, $this->content, $this->lang, $this->id,
-            $this->lang, $this->pos, $this->id
+            $this->title, $this->content, $this->lang, $this->show,
+            $this->id, $this->lang, $this->pos, $this->id
         );
         $result=$query->execute($param);
         if ($result) {

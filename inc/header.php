@@ -94,7 +94,8 @@ if (isset($dom)) {
             "ul", null, array("id"=>"pageMenu")
         );
         foreach ($pages as $item) {
-            if ($item->id!=$config->homepage) {
+            $page = new Page($config->lang, $item->id);
+            if ($item->id!=$config->homepage && $page->show) {
                 $navbar->ul->addElement("li")->addElement(
                     "a", $item->title, array(
                         "href"=>"index.php?page=".$item->id."&lang=".$config->lang

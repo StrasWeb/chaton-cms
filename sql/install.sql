@@ -4,8 +4,8 @@ CREATE TABLE IF NOT EXISTS `%s` (  `title` varchar(255) NOT NULL DEFAULT 'Chaton
 			
 CREATE TABLE IF NOT EXISTS `%s` (  `title` varchar(255) NOT NULL,  `id` int(11) NOT NULL AUTO_INCREMENT,  `date` date NOT NULL,  `content` longtext NOT NULL,  `lang` char(2) NOT NULL DEFAULT 'en',  KEY `id` (`id`))   DEFAULT CHARSET=utf8;
 			
-CREATE TABLE IF NOT EXISTS `%s` (  `title` varchar(255) NOT NULL,  `content` longtext NOT NULL,  `pos` int(11) NOT NULL,  `id` int(11) NOT NULL AUTO_INCREMENT,  `lang` char(2) NOT NULL DEFAULT 'en',  KEY (`id`))   DEFAULT CHARSET=utf8;
-			
+CREATE TABLE IF NOT EXISTS `%s` (  `title` varchar(255) NOT NULL,  `content` longtext NOT NULL,  `pos` int(11) NOT NULL,  `id` int(11) NOT NULL AUTO_INCREMENT,  `lang` char(2) NOT NULL DEFAULT 'en', `show` BOOLEAN NOT NULL DEFAULT '1',  KEY (`id`))   DEFAULT CHARSET=utf8;
+
 CREATE TABLE IF NOT EXISTS `%s` (  `name` varchar(255) NOT NULL,  `enabled` tinyint(4) NOT NULL DEFAULT '0' ,  `installed` tinyint(4) NOT NULL DEFAULT '0')  DEFAULT CHARSET=utf8;
 			
 CREATE TABLE IF NOT EXISTS `%s` ( `param` varchar(100) NOT NULL, `value` longtext DEFAULT NULL, `lang` char(2) NOT NULL DEFAULT 'en' ) DEFAULT CHARSET=utf8;
