@@ -103,7 +103,7 @@ class Page extends Document
             $query=file_get_contents("sql/addPage.sql");  
             $query =sprintf($query, $config->prefix.self::$table);     
             $query = $config->sql->prepare($query, array(PDO::PARAM_NULL));
-            $param=array($this->title, $this->pos, $this->content, $this->lang);
+            $param=array($this->title, $this->pos, $this->content, $this->lang, $this->show);
         }
         $result=$query->execute($param);
         if ($result) {

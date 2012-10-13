@@ -194,7 +194,7 @@ if (isset($dom)) {
     $dom->html->body->div->div->form->addElement(
         "input", null, array("type"=>"checkbox", "id"=>"show", "name"=>"show")
     );
-    if ($page->show) {
+    if (isset($page->show) && $page->show) {
         $dom->html->body->div->div->form->input
             ->setAttribute("checked", "checked");
     }
