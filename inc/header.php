@@ -81,7 +81,7 @@ if (isset($dom)) {
     )->addElement(
         "li", null, array("id"=>"newsMenuItem")
     )->addElement(
-        "a", $config->news_title,
+        "a", _($config->news_title),
         array("href"=>"index.php?page=news&lang=".$config->lang)
     );
     if (isset($_GET["page"])&&$_GET["page"]=="news") {

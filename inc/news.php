@@ -112,11 +112,16 @@ if (isset($dom)) {
                     "a", "<", 
                     array(
                         "title"=>_("Previous page"),
-                        "href"=>"index.php?min=".($_GET["min"]-$config->perpage)."&page=news"
+                        "href"=>"index.php?min=".
+                        ($_GET["min"]-$config->perpage)."&page=news"
                     )
                 );
             }
             $pagenum->addSpace();
+            $dom->html->head->title->nodeValue.= " - "._($config->news_title);
+            if ($config->current > 1) {
+                $dom->html->head->title->nodeValue.=" - ".$config->current;
+            }
             $pagenum->addElement("b", $config->current);
             $pagenum->addSpace();
             if (Article::getNum() > $config->min+$config->perpage) {
@@ -124,7 +129,8 @@ if (isset($dom)) {
                     "a", ">", 
                     array(
                         "title"=>_("Next page"),
-                        "href"=>"index.php?min=".($config->min+$config->perpage)."&page=news"
+                        "href"=>"index.php?min=".
+                        ($config->min+$config->perpage)."&page=news"
                     )
                 );
             }
