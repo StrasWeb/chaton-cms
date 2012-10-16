@@ -31,6 +31,7 @@ if (isset($this)) {
     $this->wrapper=$dom->getElementById("wrapper");
     if (isset($_GET["gallery"])) {
         include_once "GalleryImage.php";
+        include_once "Gallery.php";
         $this->wrapper->setAttribute(
             "class",
             $this->wrapper->getAttribute("class")." inside_gallery"
@@ -40,6 +41,8 @@ if (isset($this)) {
             $this->id=isset($_GET["image"])?$_GET["image"]:$this->images[0]->id;
             $this->image=new GalleryImage($_GET["gallery"], $this->id);
         }
+        $gallery = new Gallery($_GET["gallery"]);
+        $dom->html->head->title->nodeValue.=" - ".$gallery->name;
         if (isset($this->image->id)) {
             if (substr($this->image->type, 0, 5)=="video") {
                 $dom->html->body->div->div->section->div
@@ -105,8 +108,11 @@ if (isset($this)) {
                         )
                     );
             }
-            $dom->html->body->div->div->section->div
-                ->addElement("h4", $this->image->name);
+            if (!empty($this->image->name)) {
+                $dom->html->body->div->div->section->div
+                    ->addElement("h4", $this->image->name);
+                $dom->html->head->title->nodeValue.=" - ".$this->image->name;
+            }
             $dom->html->body->div->div->section->div
                 ->addElement("span", $this->image->desc);
             $dom->html->body->div->div->section->div
