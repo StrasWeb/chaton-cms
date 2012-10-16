@@ -55,7 +55,7 @@ if (isset($dom)) {
                     $dom->html->body->div->div->section->article->div->content
                 );
         } else {
-            include "404.php";
+            include __DIR__."/404.php";
         }
     } else {
         $articles=Article::getAll($config->lang);
