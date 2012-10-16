@@ -39,7 +39,7 @@ if (isset($dom)) {
                 $dom->html->body->div->div->section->div->div->content
             );
     } else {
-        include "404.php";
+        include __DIR__."/404.php";
     }
 }
 ?>
