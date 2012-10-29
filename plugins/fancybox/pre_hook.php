@@ -1,6 +1,6 @@
 <?php
 /**
- * Fancybox plugin
+ * Fancybox plugin pre hook
  *
  * PHP Version 5.3.6
  * 
@@ -10,10 +10,5 @@
  * @license  http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License
  * @link     http://cms.strasweb.fr
  */
-if (isset($this)) {
-    $this->name="Fancybox";
-    $this->ver=0.1;
-    $this->minver=0.2;
-    $this->maxver=0.4;
-}
+define("JQUERY", true);
 ?>

@@ -19,12 +19,24 @@ if (!is_file("config.php")) {
 } else {
     include_once "classes/Config.php";
     $config=new Config();
+    
+    include_once "classes/Plugin.php";
+    $plugins=Plugin::getList();
+    
     include "inc/localization.php";
     //Essayons de garder les pages valides (HTML5).
     include_once "classes/dom-enhancer/XMLDocument.php";
     $doc=new DOMenhancer_XMLDocument();
     $dom=$doc->DOM;
     include "inc/version.php";
+    
+    foreach ($plugins as $dir) {
+        $plugin=new Plugin($dir);
+        if ($plugin->enabled) {
+            $plugin->preHook();
+        }
+    }
+    
     include "inc/head.php";
     $dom->html->body->addElement("div", null, array("id"=>"wrapper"));
     include "inc/header.php";
@@ -70,14 +82,14 @@ if (!is_file("config.php")) {
             ->removeChild($dom->getElementById("newsMenuItem"));
     }
     include "inc/footer.php";
-    include_once "classes/Plugin.php";
-    $plugins=Plugin::getList();
+    
     foreach ($plugins as $dir) {
         $plugin=new Plugin($dir);
         if ($plugin->enabled) {
             $plugin->hook();
         }
     }
+    
     $mainwrapper=$dom->getElementById("mainwrapper");
     $mainwrapper->addElement("div", null, array("class"=>"clear"));
     print($dom->saveHTML());

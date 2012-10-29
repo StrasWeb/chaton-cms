@@ -165,7 +165,7 @@ class Plugin
     }
     
     /**
-     * Hook a plugin into the code
+     * Hook a plugin into the code after the DOM is generated
      * 
      * @return void
      * */
@@ -178,6 +178,19 @@ class Plugin
         if (isset($_GET["plugin"]) && $_GET["plugin"]==$this->dir) {
             $dom->getElementById($this->dir."MenuItem")
                 ->setAttribute("class", "current");   
+        }
+    }
+    
+     /**
+     * Hook a plugin into the code before the DOM is generated
+     * 
+     * @return void
+     * */
+    function preHook()
+    {
+        $file="plugins/".$this->dir."/pre_hook.php";
+        if (is_file($file)) {
+            include $file;
         }
     }
     

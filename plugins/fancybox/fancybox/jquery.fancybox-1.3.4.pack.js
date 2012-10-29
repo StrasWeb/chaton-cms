@@ -1,3 +1,4 @@
+// @codingStandardsIgnoreFile
 /*
  * FancyBox - jQuery Plugin
  * Simple and fancy lightbox alternative

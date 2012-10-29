@@ -68,7 +68,7 @@ if (isset($dom)) {
     $dom->html->head->appendChild($dom->commentIE);
     
     //Il faudrait tester s'il y a une extension qui l'utilise, inutile sinon
-    if (defined("jquery")) {
+    if (defined("JQUERY")) {
         if (is_file("/usr/share/javascript/jquery/jquery.min.js")) {
             //On utilise le paquet Debian si possible
             $dom->html->head->addElement(
