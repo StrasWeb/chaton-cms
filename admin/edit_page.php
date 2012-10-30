@@ -129,7 +129,7 @@ if (isset($dom)) {
         "input", null, array(
             "type"=>"text", "id"=>"page_url",
             "name"=>"page_url",
-            "value"=>"index.php?page=".$page->id."&lang=".$page->lang,
+            "value"=>$config->fullpath."index.php?page=".$page->id."&lang=".$page->lang,
             "readonly"=>"readonly"
         )
     );

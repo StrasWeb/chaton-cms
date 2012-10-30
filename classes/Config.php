@@ -102,6 +102,14 @@ class Config
                     include_once __DIR__."/dom-enhancer/Error.php";
                     DOMenhancer_Error::$debug=true;
                 }
+                $this->fullpath=(isset(
+                    $_SERVER["HTTPS"]
+                )?"https://":"http://").$_SERVER["HTTP_HOST"].substr(
+                    $_SERVER["SCRIPT_NAME"], 0, strrpos($_SERVER["SCRIPT_NAME"], "/")+1
+                );
+                if (basename($this->fullpath)=="admin") {
+                    $this->fullpath=dirname($this->fullpath)."/";
+                }
             }
             catch(PDOException$error) {
                 //Faudrait faire un peu de debug là
