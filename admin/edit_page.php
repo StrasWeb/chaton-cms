@@ -122,6 +122,20 @@ if (isset($dom)) {
     $dom->html->body->div->div->form->addElement("br");
     $dom->html->body->div->div->form->addElement("br");
     $dom->html->body->div->div->form->addElement(
+        "label", _("URL:"), array("for"=>"page_url")
+    );
+    $dom->html->body->div->div->form->addElement("br");
+    $dom->html->body->div->div->form->addElement(
+        "input", null, array(
+            "type"=>"text", "id"=>"page_url",
+            "name"=>"page_url",
+            "value"=>"index.php?page=".$page->id."&lang=".$page->lang,
+            "readonly"=>"readonly"
+        )
+    );
+    $dom->html->body->div->div->form->addElement("br");
+    $dom->html->body->div->div->form->addElement("br");
+    $dom->html->body->div->div->form->addElement(
         "label", _("Content:"), array("for"=>"page_content")
     );
     $dom->html->body->div->div->form->addElement("br");
