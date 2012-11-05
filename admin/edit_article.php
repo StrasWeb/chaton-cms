@@ -167,11 +167,13 @@ if (isset($dom)) {
     
     $dom->html->body->div->div->form->addElement("br");
     
-    $dom->html->body->div->div->form->addElement("label", _("Category:"." "), array("for"=>"cat"));
+    $dom->html->body->div->div->form->addElement(
+        "label", _("Category:"." "), array("for"=>"cat")
+    );
     $dom->html->body->div->div->form->addElement(
         "select", null, array("id"=>"cat", "name"=>"cat")
     );
-    require_once "classes/Category.php";
+    include_once "classes/Category.php";
     $cats=Category::getList();
     foreach ($cats as $cat) {
         $option=$dom->html->body->div->div->form->select->addElement(

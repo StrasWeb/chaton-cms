@@ -45,11 +45,18 @@ if (is_file("../config.php")) {
     );
 
     session_start();
-    if (empty($_SERVER["PHP_AUTH_DIGEST"]) && !isset($_SESSION["login"])) {
+    if (empty($_SERVER["PHP_AUTH_DIGEST"])
+        && empty($_SERVER["REDIRECT_HTTP_AUTHORIZATION"])
+        && !isset($_SESSION["login"])
+    ) {
         auth();
     } else {
         if (!isset($_SESSION["login"])) {
-            $auth=explode(", ", $_SERVER["PHP_AUTH_DIGEST"]);
+            if (empty($_SERVER["PHP_AUTH_DIGEST"])) {
+                $auth=explode(", ", $_SERVER["REDIRECT_HTTP_AUTHORIZATION"]);
+            } else {
+                $auth=explode(", ", $_SERVER["PHP_AUTH_DIGEST"]);
+            }
             foreach ($auth as $value) {
                 $arr=explode("=", str_replace("\"", "", $value));
                 $auth[$arr[0]]=$arr[1]; 
