@@ -16,7 +16,7 @@ if (isset($dom)) {
         $dom->html->body->div->div->section
             ->addElement(
                 "div", null, array(
-                    "id"=>"page", "lang"=>$page->lang, "itemscope"=>null,
+                    "id"=>"page", "lang"=>$page->lang, "itemscope"=>'itemscope',
                     "itemtype"=>"http://schema.org/WebPage"
                 )
             )->addElement(

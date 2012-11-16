@@ -22,7 +22,7 @@ if (isset($dom)) {
                 ->nodeValue.=" - ".UtfNormal::cleanUp($article->title); 
             $dom->html->body->div->div->section->addElement(
                 "article", null, array(
-                    "lang"=>$article->lang, "itemscope"=>null,
+                    "lang"=>$article->lang, "itemscope"=>"itemscope",
                     "itemtype"=>"http://schema.org/Article"
                 )
             );
@@ -69,7 +69,7 @@ if (isset($dom)) {
                 $dom->html->body->div->div->section->addElement(
                     "article", null,
                     array(
-                        "class"=>"news","lang"=>$art->lang, "itemscope"=>null,
+                        "class"=>"news","lang"=>$art->lang, "itemscope"=>"itemscope",
                         "itemtype"=>"http://schema.org/Article"
                     )
                 )->addElement("header", null, array("class"=>"header ui-grid-a"));
