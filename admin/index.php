@@ -106,7 +106,7 @@ if (is_file("../config.php")) {
             }
 
             $beta=$config->pre_ver?"_beta":"";
-            $dom->html->addElement("body")->addElement(
+            $dom->html->body->addElement(
                 "div", null, array("class"=>"header")
             )->addElement(
                 "img", null, array("alt"=>"Chaton CMS v.".$config->chaton_ver,
