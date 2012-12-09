@@ -13,10 +13,10 @@
 global $dom;
 if (isset($dom)) {
     $dom->html->head->addElement(
-            'meta', null, array(
-                'name'=>'viewport', 'content'=>'width=device-width, initial-scale=1'
-            )
-        );
+        'meta', null, array(
+            'name'=>'viewport', 'content'=>'width=device-width, initial-scale=1'
+        )
+    );
     $dom->html->head->addElement(
         'link', null, array(
             'rel'=>'stylesheet',
@@ -36,7 +36,11 @@ if (isset($dom)) {
         for ($i=0; $i<$articles->length; $i++) {
             $art=$articles->item($i);
             $oldArt=$art->getElementsByTagName('h3')->item(0);
-            $art->addElement('h3', null, array('itemprop'=>'name'))->addElement('a', UtfNormal::cleanUp(stripslashes($oldArt->nodeValue)), array('href'=>$oldArt->firstChild->getAttribute('href'), 'itemprop'=>'url'));
+            $art->addElement('h3', null, array('itemprop'=>'name'))->addElement(
+                'a', UtfNormal::cleanUp(stripslashes($oldArt->nodeValue)),
+                array('href'=>$oldArt->firstChild->getAttribute('href'),
+                'itemprop'=>'url')
+            );
             $art->removeChild($art->getElementsByTagName('header')->item(0));
 
         }

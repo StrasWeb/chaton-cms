@@ -28,16 +28,15 @@ if (isset($dom)) {
             );
             $dom->html->body->div->div->section->article->addElement(
                 "h2", null, array(
-                    "class"=>"page-title ui-grid-a", "itemprop"=>"name"
+                    "class"=>"page-title", "itemprop"=>"name"
                 )
             )->addElement(
-                "span", UtfNormal::cleanUp($article->title),
-                array("class"=>"ui-block-a")
+                "span", UtfNormal::cleanUp($article->title)
             );
             $dom->html->body->div->div->section->article->h2->addElement(
                 "time", date("d/m/Y", strtotime($article->date)), 
                 array(
-                    "datetime"=>$article->date,"class"=>"date ui-block-b",
+                    "datetime"=>$article->date,"class"=>"date",
                     "itemprop"=>"datePublished"
                 )
             );
@@ -70,15 +69,15 @@ if (isset($dom)) {
                     "article", null,
                     array(
                         "class"=>"news","lang"=>$art->lang, "itemscope"=>"itemscope",
-                        "itemtype"=>"http://schema.org/Article", "data-role"=>"collapsible",
+                        "itemtype"=>"http://schema.org/Article",
+                        "data-role"=>"collapsible",
                         "data-iconpos"=>"right"
                     )
                 );
-                $dom->article->addElement("header", null, array("class"=>"header ui-grid-a"));
+                $dom->article->addElement("header", null, array("class"=>"header"));
                 $dom->html->body->div->div->section->article->header->addElement(
                     "h3", null, array(
-                        "class"=>"subtitle ui-block-a", "itemprop"=>"name",
-                        "data-role"=>"legend"
+                        "class"=>"subtitle", "itemprop"=>"name"
                     )
                 )->addElement(
                     "a", UtfNormal::cleanUp(stripslashes($art->title)),
@@ -91,7 +90,7 @@ if (isset($dom)) {
                 $dom->html->body->div->div->section->article->header->addElement(
                     "time", date("d/m/Y", strtotime($art->date)),
                     array(
-                        "class"=>"date ui-block-b", "datetime"=>$art->date,
+                        "class"=>"date", "datetime"=>$art->date,
                         "itemprop"=>"datePublished"
                     )
                 );
