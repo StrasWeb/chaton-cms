@@ -128,6 +128,8 @@ if (isset($this)) {
                             "&image=".$image->id
                         )
                     )->addElement("span", $i);
+                $dom->html->body->div->div->section->div->div
+                    ->addSpace();
                 if ($this->next) {
                     if (substr($this->image->type, 0, 5)=="image") {
                         $dom->html->body->div->div->section->div->a

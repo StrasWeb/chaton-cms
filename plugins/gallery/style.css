@@ -15,6 +15,7 @@
 
 .links .current{
     font-weight:bold;
+    color:black !important;
 }
 #galleryPage img:hover{
     opacity:1;
