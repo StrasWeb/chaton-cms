@@ -17,16 +17,6 @@ padding:0;
 margin-bottom:1em; 
 }
 
-.float{
-float:left;
-width:72%;
-}
-.box{
-float:right;
-clear:right;
-width:25%;
-}
-
 
 
 .mainheader {

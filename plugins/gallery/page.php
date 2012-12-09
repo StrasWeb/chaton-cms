@@ -162,10 +162,13 @@ if (isset($this)) {
             )
         );
         $this->galleries=Gallery::getAll();
+        $this->ul=$dom->html->body->div->div->section->div
+                    ->addElement("ul", null, array("data-role"=>"listview",
+                    "data-inset"=>"true"));
         if (count($this->galleries)>1) {
             foreach ($this->galleries as $gallery) {
-                $gal=$dom->html->body->div->div->section->div
-                    ->addElement("div", null, array("class"=>"gallery"))
+                $gal=$this->ul
+                    ->addElement("li", null, array("class"=>"gallery"))
                     ->addElement(
                         "a", null, array(
                             "href"=>"?plugin=".$this->dir."&gallery=".$gallery->id
@@ -176,14 +179,14 @@ if (isset($this)) {
                     $gal->addElement(
                         "img", null, array(
                             "src"=>$coverURL,
-                            "class"=>"cover", "id"=>$gallery->id
+                            "class"=>"cover ui-li-thumb", "id"=>$gallery->id
                         )
                     );
                 }
-                $dom->html->body->div->div->section->div->div->a
+                $this->ul->li->a
                     ->addElement("h4", $gallery->name);
-                $dom->html->body->div->div->section->div->div
-                    ->addElement("span", $gallery->desc);
+                $this->ul->li
+                    ->addElement("span", $gallery->desc, array("class"=>"ui-li-count"));
             }
         } else {
             header(

@@ -23,7 +23,9 @@ if (isset($this) && (!isset($_GET["news"])
         $dom->getElementById("main")->setAttribute("class", "main float");
         $mainwrapper=$dom->getElementById("mainwrapper");
         $mainwrapper->addElement(
-            "div", null, array("class"=>"box", "id"=>"about_box", "data-role"=>"footer")
+            "div", null, array("class"=>"box", "id"=>"about_box", "data-role"=>"collapsible",
+            "data-collapsed-icon"=>"info", "data-expanded-icon"=>"info", "data-iconpos"=>"right",
+            "data-content-theme"=>"c"), true
         )
             ->addElement("h2", $plugin->title, array("class"=>"box_header"));
         $mainwrapper->div->addElement("div", null, array("class"=>"text"));
