@@ -183,3 +183,6 @@ color:red;
 .ui-controlgroup-horizontal {
     text-align:center;
 }
+
+.ui-header .ui-title,
+.ui-collapsible-heading .ui-btn-text{white-space:normal;}
