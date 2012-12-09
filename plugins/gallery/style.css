@@ -20,3 +20,6 @@
 #galleryPage img:hover{
     opacity:1;
 }
+.ui-li-heading {
+    padding-left:15px;
+}
