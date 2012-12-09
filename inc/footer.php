@@ -13,11 +13,12 @@
 if (isset($dom)) {
     $dom->html->body->div->addElement(
         "footer", null, array(
-            "id"=>"footer","class"=>"footer", "data-role"=>"footer"
+            "id"=>"footer","class"=>"footer", "data-role"=>"footer",
+            "data-position"=>"fixed"
         )
     )->addElement(
         "div", null, array(
-            "data-role"=>"controlgroup", "data-type"=>"horizontal"
+            "data-role"=>"navbar", "data-iconpos"=>"left"
         )
     );
     $dom->html->body->div->footer->div->addElement("span")

@@ -66,16 +66,19 @@ if (isset($dom)) {
         );
         if (count($articles)>0) {
             foreach ($articles as $art) {
-                $dom->html->body->div->div->section->addElement(
+                $dom->article=$dom->html->body->div->div->section->addElement(
                     "article", null,
                     array(
                         "class"=>"news","lang"=>$art->lang, "itemscope"=>"itemscope",
-                        "itemtype"=>"http://schema.org/Article"
+                        "itemtype"=>"http://schema.org/Article", "data-role"=>"collapsible",
+                        "data-iconpos"=>"right"
                     )
-                )->addElement("header", null, array("class"=>"header ui-grid-a"));
+                );
+                $dom->article->addElement("header", null, array("class"=>"header ui-grid-a"));
                 $dom->html->body->div->div->section->article->header->addElement(
                     "h3", null, array(
-                        "class"=>"subtitle ui-block-a", "itemprop"=>"name"
+                        "class"=>"subtitle ui-block-a", "itemprop"=>"name",
+                        "data-role"=>"legend"
                     )
                 )->addElement(
                     "a", UtfNormal::cleanUp(stripslashes($art->title)),

@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET["news"]) || isset($_GET["page"])){
 	chdir("../..");
-	require_once("classes/DOMElement.php");
+	require_once("classes/dom-enhancer/DOMElement.php");
 		require_once("classes/UtfNormal.php");
 require_once("classes/Config.php");
 $config=new Config();
@@ -9,7 +9,7 @@ $config=new Config();
 	$doctype=$domimpl->createDocumentType('html');
 	$dom=$domimpl->createDocument(null,"html",$doctype);
 
-	$dom->registerNodeClass('DOMElement', 'NewDOMElement');
+	$dom->registerNodeClass('DOMElement', 'DOMEnhancer_DOMElement');
 	$dom->html=$dom->documentElement;
 
     if(isset($_GET["news"])){

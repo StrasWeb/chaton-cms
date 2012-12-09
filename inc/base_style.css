@@ -2,17 +2,11 @@ body {
     font-family:sans-serif;
 }
 
-a{
-    background-color:white;
-}
-
 .wrapper {
 margin:auto;
-width:90%;
 }
 
 .mainheader,.menu,.footer,.main, .box {
-border:thin solid #CCC;
 padding:0.5em;
 }
 
@@ -36,7 +30,6 @@ width:25%;
 
 
 .mainheader {
-margin-bottom:1em;
 display:block;
 }
 
@@ -66,7 +59,6 @@ font-size:0;
 }
 
 .menu ul {
-border-right:thin solid #DDD;
 display:inline-block;
 font-variant:small-caps;
 list-style-type:none;
@@ -87,11 +79,8 @@ font-size: large;
 display:inline-block;
 height:100%;
 text-decoration:none;
-padding:0.5em;
 }
 .menu div{
-display:inline-block;
-margin-left:0.5em;
 font-size:medium;
 }
 .menu .search {
@@ -108,15 +97,12 @@ font-size:small;
 }
 
 .main .news {
-border:thin solid #CCC;
 margin:1em 0.5em;
 display:block;
 }
 
 .main .news .header {
-border-bottom:thin solid #EEE;
 font-variant:small-caps;
-padding:0.3em 0.5em 0;
 }
 
 .text {
@@ -125,7 +111,6 @@ padding:1em;
 
 .main .page-title,
 .box_header {
-border-bottom:thin solid #DDD;
 font-variant:small-caps;
 margin:0;
 padding:0.3em;
@@ -141,9 +126,6 @@ margin-left:0.5em;
 font-size:medium;
 }
 
-.search {
-border-left:thin solid #DDD;
-}
 
 .title a,.footer a,.main .news .header a {
 text-decoration:none;

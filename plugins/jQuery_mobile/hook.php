@@ -31,5 +31,14 @@ if (isset($dom)) {
     //Form does not work with jQuery Mobile :/
     $dom->getElementById("menu")
         ->removeChild($dom->getElementById("search"));
+    $articles=$dom->getElementsByTagName("article");
+    if (count($articles)>0) {
+        for ($i=0; $i<$articles->length; $i++) {
+            $art=$articles->item($i);
+            $art->addElement("h3", UtfNormal::cleanUp(stripslashes($art->getElementsByTagName("h3")->item(0)->nodeValue)));
+            $art->removeChild($art->getElementsByTagName("header")->item(0));
+
+        }
+    }
 }
 ?>

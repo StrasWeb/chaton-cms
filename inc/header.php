@@ -15,8 +15,7 @@ if (isset($dom)) {
     $dom->html->body->div->addElement("div", null, array("id"=>"headerwrapper"));
     $dom->html->body->div->div->addElement(
         "header", null, array(
-            "id"=>"header","class"=>"mainheader", "data-role"=>"header",
-            "data-theme"=>"c"
+            "id"=>"header","class"=>"mainheader", "data-role"=>"header"
         )
     );
     $dom->html->body->div->div->header->addElement(
@@ -94,8 +93,8 @@ if (isset($dom)) {
             "ul", null, array("id"=>"pageMenu")
         );
         foreach ($pages as $item) {
-            $page = new Page($config->lang, $item->id);
-            if ($item->id!=$config->homepage && $page->show) {
+            $myPage = new Page($config->lang, $item->id);
+            if ($item->id!=$config->homepage && $myPage->show) {
                 $navbar->ul->addElement("li")->addElement(
                     "a", $item->title, array(
                         "href"=>"index.php?page=".$item->id."&lang=".$config->lang
@@ -153,7 +152,8 @@ if (isset($dom)) {
         );
     }
     $dom->html->body->div->addElement(
-        "div", null, array("id"=>"mainwrapper", "class"=>"mainwrapper")
+        "div", null, array("id"=>"mainwrapper", "class"=>"mainwrapper",
+        "data-role"=>"content")
     );
 }
 ?>
