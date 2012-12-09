@@ -184,5 +184,7 @@ color:red;
     text-align:center;
 }
 
-.ui-header .ui-title,
-.ui-collapsible-heading .ui-btn-text{white-space:normal;}
+body .ui-header .ui-title,
+.ui-collapsible-heading .ui-btn-text {
+    white-space:normal;
+}
