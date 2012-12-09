@@ -21,7 +21,8 @@ if (isset($this)) {
         ->addElement(
             "a", $this->title,
             array(
-                "href"=>"index.php?plugin=".$this->dir."&lang=".$config->lang
+                "href"=>"index.php?plugin=".$this->dir."&lang=".$config->lang,
+                "data-theme"=>"a"
             )
         );
 }

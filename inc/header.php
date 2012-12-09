@@ -81,7 +81,7 @@ if (isset($dom)) {
         "li", null, array("id"=>"newsMenuItem")
     )->addElement(
         "a", _($config->news_title),
-        array("href"=>"index.php?page=news&lang=".$config->lang)
+        array("href"=>"index.php?page=news&lang=".$config->lang, "data-theme"=>"a")
     );
     if (isset($_GET["page"])&&$_GET["page"]=="news") {
         $navbar->ul->li->setAttribute("class", "current");
@@ -97,7 +97,7 @@ if (isset($dom)) {
             if ($item->id!=$config->homepage && $myPage->show) {
                 $navbar->ul->addElement("li")->addElement(
                     "a", $item->title, array(
-                        "href"=>"index.php?page=".$item->id."&lang=".$config->lang
+                        "href"=>"index.php?page=".$item->id."&lang=".$config->lang, "data-theme"=>"a"
                     )
                 );
                 if (isset($_GET["page"]) && $item->id==$_GET["page"]) {
@@ -115,7 +115,7 @@ if (isset($dom)) {
             $navbar->ul->addElement("li")
                 ->addElement(
                     "a", $link->title, array(
-                        "href"=>$link->url, "rel"=>"external"
+                        "href"=>$link->url, "rel"=>"external", "data-theme"=>"a"
                     )
                 );
         }
