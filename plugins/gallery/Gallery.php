@@ -27,7 +27,7 @@ if (isset($dom)) {
      */
     class Gallery extends Item
     {
-        static $table="chaton_gallery";
+        static $table="gallery";
         
         /**
          * Get all galleries
