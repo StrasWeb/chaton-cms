@@ -41,7 +41,8 @@ if (isset($dom)) {
     $dom->html->body->div->div->div->addElement(
         "nav", null,
         array(
-            "id"=>"menu","class"=>"menu", "data-role"=>"navbar"
+            "id"=>"menu","class"=>"menu", "data-role"=>"controlgroup",
+            "data-type"=>"horizontal", "data-mini"=>"true"
         )
     );
     $dom->html->body->div->div->div->nav->addElement(
@@ -81,7 +82,8 @@ if (isset($dom)) {
         "li", null, array("id"=>"newsMenuItem")
     )->addElement(
         "a", _($config->news_title),
-        array("href"=>"index.php?page=news&lang=".$config->lang, "data-theme"=>"a")
+        array("href"=>"index.php?page=news&lang=".$config->lang,
+        "data-theme"=>"b", "data-role"=>"button")
     );
     if (isset($_GET["page"])&&$_GET["page"]=="news") {
         $navbar->ul->li->setAttribute("class", "current");
@@ -97,7 +99,8 @@ if (isset($dom)) {
             if ($item->id!=$config->homepage && $myPage->show) {
                 $navbar->ul->addElement("li")->addElement(
                     "a", $item->title, array(
-                        "href"=>"index.php?page=".$item->id."&lang=".$config->lang, "data-theme"=>"a"
+                        "href"=>"index.php?page=".$item->id."&lang=".$config->lang,
+                        "data-theme"=>"b", "data-role"=>"button"
                     )
                 );
                 if (isset($_GET["page"]) && $item->id==$_GET["page"]) {
@@ -115,12 +118,13 @@ if (isset($dom)) {
             $navbar->ul->addElement("li")
                 ->addElement(
                     "a", $link->title, array(
-                        "href"=>$link->url, "rel"=>"external", "data-theme"=>"a"
+                        "href"=>$link->url, "rel"=>"external",
+                        "data-theme"=>"b", "data-role"=>"button"
                     )
                 );
         }
     }
-    $dom->html->body->div->div->div->nav->addElement(
+    $dom->html->body->div->div->div->nav->div->addElement(
         "ul", null, array("id"=>"pluginMenu")
     );
     if ($config->multilingual&&!empty($config->languages)) {

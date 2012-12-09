@@ -179,3 +179,7 @@ color:green;
 .error {
 color:red;
 }
+
+.ui-controlgroup-horizontal {
+    text-align:center;
+}

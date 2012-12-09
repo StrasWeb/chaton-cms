@@ -22,7 +22,7 @@ if (isset($this)) {
             "a", $this->title,
             array(
                 "href"=>"index.php?plugin=".$this->dir."&lang=".$config->lang,
-                "data-theme"=>"a"
+                "data-theme"=>"b", "data-role"=>"button"
             )
         );
 }
