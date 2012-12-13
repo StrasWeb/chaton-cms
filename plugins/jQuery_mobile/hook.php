@@ -36,7 +36,7 @@ if (isset($dom)) {
         for ($i=0; $i<$articles->length; $i++) {
             $art=$articles->item($i);
             $oldArt=$art->getElementsByTagName('h3')->item(0);
-            $art->addElement('h3', null, array('itemprop'=>'name'))->addElement(
+            $art->addElement('h3', null, array('itemprop'=>'name'), true)->addElement(
                 'a', UtfNormal::cleanUp(stripslashes($oldArt->nodeValue)),
                 array('href'=>$oldArt->firstChild->getAttribute('href'),
                 'itemprop'=>'url')
