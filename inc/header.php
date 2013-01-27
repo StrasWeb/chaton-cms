@@ -49,8 +49,10 @@ if (isset($dom)) {
         "div", null, array("id"=>"search", "class"=>"search")
     )->addElement(
         "form", null, array("action"=>"search.php","method"=>"get")
-    )->addElement("label", _("Search:")." ", array("for"=>"search_field"));
-    $dom->html->body->div->div->div->nav->div->form->addElement(
+    )->addElement("fieldset")->addElement(
+        "label", _("Search:")." ", array("for"=>"search_field")
+    );
+    $dom->html->body->div->div->div->nav->div->form->fieldset->addElement(
         "input", null, array(
             "type"=>"search", "name"=>"search_field",
             "id"=>"search_field"
