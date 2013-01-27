@@ -3,8 +3,8 @@ if(isset($dom)){
 require_once("classes/Item.php");
 class GBComment extends Item {
     static $table="chaton_guestbook";
-    
-    static function getAll($id_lang=null, $table=null, $file="getAll"){
+
+    static function getAll($id_lang=null, $table=null, $file="getAll", $min = NULL, $max = NULL){
     global $config;
 		return parent::getAll($id_lang, $config->prefix.self::$table);
 	}

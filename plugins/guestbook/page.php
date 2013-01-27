@@ -13,17 +13,19 @@ if(isset($this)){
         require_once("plugins/".$this->dir."/GBComment.php");
         $this->comments=GBComment::getAll();
         $dom->html->body->div->div->section->div->addElement("div", null, array("id"=>"comments"));
-        foreach($this->comments as $comment){
-            $dom->html->body->div->div->section->div->div->addElement("div", null, array("class"=>"comment"));
-            $dom->html->body->div->div->section->div->div->div->addElement("blockquote", stripslashes($comment->comment));
-            $dom->html->body->div->div->section->div->div->div->addElement("div", null, array("class"=>"commentInfo"));
-            $dom->html->body->div->div->section->div->div->div->div->addElement("span", stripslashes($comment->name));
-            if(!empty($comment->age)){
-            $dom->html->body->div->div->section->div->div->div->div->addElement("span", ", ".stripslashes($comment->age)." "._("years old"));
+        if (is_array($this->comments)) {
+            foreach($this->comments as $comment){
+                $dom->html->body->div->div->section->div->div->addElement("div", null, array("class"=>"comment"));
+                $dom->html->body->div->div->section->div->div->div->addElement("blockquote", stripslashes($comment->comment));
+                $dom->html->body->div->div->section->div->div->div->addElement("div", null, array("class"=>"commentInfo"));
+                $dom->html->body->div->div->section->div->div->div->div->addElement("span", stripslashes($comment->name));
+                if(!empty($comment->age)){
+                $dom->html->body->div->div->section->div->div->div->div->addElement("span", ", ".stripslashes($comment->age)." "._("years old"));
+                }
+                 if(!empty($comment->location)){
+                $dom->html->body->div->div->section->div->div->div->div->addElement("span", ", ".stripslashes($comment->location));
+                 }
             }
-             if(!empty($comment->location)){
-            $dom->html->body->div->div->section->div->div->div->div->addElement("span", ", ".stripslashes($comment->location));
-             }
         }
         
         $comment=new GBComment();

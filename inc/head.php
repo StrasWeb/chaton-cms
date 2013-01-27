@@ -14,7 +14,7 @@ if (isset($dom)) {
     include_once "classes/UtfNormal.php";
     $dom->html->setAttribute("lang", $config->lang);
     $dom->html->head->setAttribute("id", "head");
-    $dom->html->head->addElement("meta", null, array("charset"=>"UTF-8"));
+    //$dom->html->head->addElement("meta", null, array("charset"=>"UTF-8"));
     $dom->html->head->addElement(
         "title", stripslashes(htmlspecialchars($config->title))
     );
