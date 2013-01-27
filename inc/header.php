@@ -58,7 +58,7 @@ if (isset($dom)) {
             "id"=>"search_field"
         )
     );
-    $dom->html->body->div->div->div->nav->div->form->addElement(
+    $dom->html->body->div->div->div->nav->div->form->fieldset->addElement(
         "input", null, array(
             "type"=>"submit", "value"=>_("OK"), "id"=>"ok_search",
             "class"=>"ok_search"
