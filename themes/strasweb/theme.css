@@ -113,9 +113,9 @@ a:hover {
     display: none;
 }
 
-.box_header {
+/*.box_header {
     text-align: right;
-}
+}*/
 
 .mainheader {
     float: left;
@@ -184,4 +184,14 @@ li {
     min-height:102px;
     background-position:right top;
     background-repeat:no-repeat;
+}
+
+.box {
+    float:right;
+    width:25%;
+}
+
+.main {
+    float:left;
+    width:70%;
 }
