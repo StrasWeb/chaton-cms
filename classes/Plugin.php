@@ -70,7 +70,7 @@ class Plugin
         $query =sprintf($query, $config->prefix.self::$table);
         if ($query) {
             $query = $config->sql->prepare($query);
-            $query->bindValue(":name", $dir, PDO::PARAM_INT);
+            $query->bindValue(":name", $dir, PDO::PARAM_STR);
             $query->execute();
             $result=$query->fetch(PDO::FETCH_OBJ);
             if (is_object($result)) {
@@ -128,7 +128,7 @@ class Plugin
         $query =sprintf($query, $config->prefix.self::$table);
         $query = $config->sql->prepare($query, array(PDO::PARAM_NULL));
         $query->bindValue(":enabled", $this->enabled, PDO::PARAM_INT);
-        $query->bindValue(":name", $this->dir, PDO::PARAM_INT);
+        $query->bindValue(":name", $this->dir, PDO::PARAM_STR);
         $result=$query->execute();
         if ($result) {
             return true;
